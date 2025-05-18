@@ -1,0 +1,258 @@
+**Core Platform & Architecture**
+**World-class, open-source middleware platform**
+*   Designed to **unify, orchestrate, and govern Model Context Protocol (MCP) servers and AI tool integrations at enterprise scale**
+*   Delivers a **centralized, secure, and extensible solution** for demanding control, compliance, and automation
+*   Single, secure **Proxy/Gateway** for all MCP clients and servers
+*   Implements **layered architecture** (Presentation, Application, Domain, Infrastructure)
+*   Event-driven design patterns
+*   Modular and scalable design
+*   Multi-tenant support
+*   Middleware platform for secure, compliant, multi-tenant AI/ML and tool orchestration
+*   Modular services for policy, agent, workspace, tool, and audit management
+*   Based on **Architecture Decision Records (ADR)**
+*   Built on proven foundations like Language Server Protocol (LSP) and JSON-RPC 2.0
+
+**MCP Proxy/Gateway Specific Features**
+*   Enterprise-grade gateway for Model Context Protocol (MCP) communications
+*   Serves as a **central point for managing, securing, and monitoring MCP tools** across multiple servers and workspaces
+*   **Tool Aggregation** from multiple MCP servers into a unified interface
+*   Support for **streaming responses and long-running tools**
+    *   Bidirectional streaming
+    *   Session management for streams
+*   Full support for the latest MCP protocol specifications
+*   **Intelligent Routing**: Dynamic request routing based on content, workspace, and policies
+*   **High Performance**: Optimized for low-latency, high-throughput AI workloads
+*   Continuous compatibility with the latest MCP protocol
+*   Dynamic Tool/Resource Registry with live updates from MCP servers
+*   Agent-to-Agent (A2A) and Multi-Agent support including A2A routing, authentication, and logging
+*   Real-time MCP traffic **inspection and debugging** (Inspector tool)
+*   Full mapping of MCP error types/codes, robust retry/backoff/circuit breaker logic
+
+**Security & Compliance**
+*   Implements **Zero-Trust security principles**
+*   Comprehensive authentication and authorization
+*   **RBAC (Role-Based Access Control)**: Fine-grained permission management at all levels including custom role creation and workspace-scoped roles and role-based tool access controls
+*   **SSO Integration**: Support for SAML, OIDC, LDAP, and enterprise identity providers
+*   **Multi-Factor Authentication (MFA)**: Supports TOTP, SMS, Email, Backup Codes and FIDO2/WebAuthn
+*   **Dual-Token Authentication**: Uses access tokens and refresh tokens
+*   Token Security: Implements token family concept, JTI validation, and token blacklisting
+*   Device Management: Allows users to view and manage their devices and sessions
+*   **CSRF Protection**
+*   **Policy Enforcement**: Centralized policy management for all MCP interactions
+    *   Contextual policies
+    *   Fallback mechanisms with multiple layers of policy evaluation
+    *   Centralized engine (e.g., Open Policy Agent/OPA) to evaluate access, data, and workflow policies before execution
+*   **Regulatory Compliance**: Built-in support for GDPR, ISO, SOC 2, and enterprise standards and CCPA
+    *   Compliance automation (audit evidence, reports, legal hold, e-discovery, industry certifications)
+*   **Secrets Management**: Secure storage and rotation of credentials and API keys
+*   IP filtering and access controls
+*   Rate limiting protection
+*   WAF, IDS, and SIEM integration
+*   Vulnerability scanning and penetration testing
+*   Data classification and masking
+*   Adheres to **ISO, OWASP, and NIST standards**
+
+**Audit Logging**
+*   **Comprehensive audit logging** for all security-relevant events and all operations (MCP requests, connections, authentication, administrative actions)
+*   Logging of every access, change, and sensitive action with user, time, context, and outcome
+*   Masking of sensitive data (PII)
+*   Support for various event types and severity levels
+*   Immutable logs
+*   **Compliance Reporting**: Support for various compliance standards (GDPR, HIPAA, SOX, PCI-DSS) and ISO standards
+    *   Customizable compliance reports
+*   **Real-time Alerting** based on audit events
+    *   Detection of suspicious activities and security events
+    *   Threshold-based and immediate alerts
+    *   Integration with external alerting systems
+*   **SIEM Integration**: Real-time and batch export to external SIEM systems
+*   **Log Rotation and Archival**
+*   **Integrity Verification** with checksums for detecting tampering
+*   User-friendly Interface for searching, filtering, and exporting audit logs (via Admin Console UI)
+*   API endpoints for audit log search, export, and maintenance
+*   Support for various **export formats** (CSV, JSON, PDF, Excel)
+*   Encrypted audit log entries (AES-256-CBC encrypted)
+*   Append-only (WORM-compliant) audit log
+*   Ability to batch-verify that all entries decrypt and parse correctly
+
+**Workspace Isolation**
+*   **Strict workspace isolation** with a dedicated WorkspaceContext class
+*   Provides **data isolation** between workspaces with workspace-specific storage
+*   Offers **tool isolation** by workspace with filtering based on permissions
+*   Supports workspace context switching and cross-workspace access controls
+*   Permissions scoped to workspaces
+*   Servers assigned to specific workspaces
+*   Tenant Isolation: Strict logical and (optionally) physical isolation of tenant data, workflows, and resources
+*   Configurable resource quotas and isolation policies per tenant/workspace
+*   Data Residency & Sovereignty: Tenant/region-specific data storage, retention, export, and purge policies
+
+**Admin Console & Management UI**
+*   Modern **management console and workflow engine**
+*   Web-based user interface
+*   Responsive, multi-language, accessible, themeable, and white-label ready
+*   Centralizes all management and monitoring
+*   Dashboard for real-time monitoring and management
+*   User Management (Add, remove, manage users and roles)
+*   Server Management (Add, remove, manage MCP servers, Server List, Detail View)
+*   Policy Management via UI (Create, update, delete policies)
+*   Audit Log Viewer (View, filter, export audit logs)
+*   System Configuration
+*   Monitoring & Alerts (Monitor system health, configure alerts)
+*   Reporting on system usage and performance
+*   Onboard new MCP servers via the Onboarding UI
+*   Configuration Editor for servers
+*   Enable/disable tools per server via UI
+*   Manage alerts
+*   Backup/restore
+*   Workspace management
+*   Notifications & Analytics Dashboard
+
+**Ecosystem & Extensibility**
+*   Vibrant ecosystem with **open APIs, SDKs, and a plugin/connector marketplace**
+*   **Plugin System**: Modular architecture with lifecycle management
+    *   Plugin Base Classes and Interfaces (IPlugin, IPluginLifecycle, IPluginManager, IPluginSandbox)
+    *   Plugin Manager (Registration, loading, management)
+    *   Plugin Sandbox (Isolation and security for plugins)
+    *   Plugin Registry (Storage and retrieval of plugin metadata)
+    *   CRUD operations for plugins
+    *   Lifecycle Management (Initialize, start, stop, dispose)
+    *   Plugin Search
+    *   Plugin Metrics and status
+*   Supports various Plugin Types: **Authentication, Tool, UI, Reporting, Connector**
+*   Sample Plugins demonstrating capabilities (Authentication Plugin, Tool Integration Plugin, UI Extension Plugin, Reporting Plugin)
+*   **Connector Marketplace**: Platform for discovering and installing plugins
+    *   Marketplace UI
+    *   Plugin Discovery (Featured, Popular, New Plugins, Categories, Tags)
+    *   Rating and Review System
+    *   Plugin Installation (One-Click Install, Dependency Management, Version Management, Rollback)
+    *   Marketplace API endpoints
+*   Contribution Guidelines for plugins and connectors
+*   **Developer Portal**: Provides resources and tools for developers
+    *   Comprehensive Documentation (Getting Started, API Reference, Plugin Development, Tutorials)
+    *   SDKs for multiple languages (TypeScript/JavaScript, Python, C#, Java, Kotlin)
+    *   Developer Tools (Plugin Validator, Plugin Sandbox, Test Harness)
+    *   Community Features (Forums, Showcase, Events, Newsletter)
+*   Supports webhooks and event-driven architecture
+*   Plugin/Extension Architecture supports hot-reload at runtime
+*   Sandboxed execution for plugins for security
+*   Automated validation for marketplace connectors/plugins
+
+**API Capabilities**
+*   **Unified API documentation** for REST, SDK, and Workspace APIs
+*   NexusMCP API Reference covers REST, MCP Protocol, and Workspace APIs
+*   API follows RESTful principles
+*   Uses JSON for data exchange
+*   Supports JWT and API Key authentication
+*   Common Headers: Authorization, X-API-Key, X-Workspace-Id, Content-Type, Accept, X-XSRF-TOKEN
+*   API errors return HTTP status codes and JSON bodies
+*   **REST API Endpoints**: For Server, workspace, user, policy, tool, audit, analytics
+*   Full endpoint list and schemas provided
+*   Example request/response for each endpoint
+*   **MCP Protocol API**: For MCP clients connecting to tools via the proxy
+    *   Authentication, connection, and message schemas
+    *   Example connect, authenticate, and tool usage flows
+    *   Added token-based authentication extension
+    *   Added workspace context extension to requests
+    *   Added support for streaming responses extension
+*   MFA Endpoints
+*   WebAuthn Endpoints
+*   Plugin API endpoints
+*   Marketplace API endpoints
+*   **API Versioning**: Semantic versioning
+*   Deprecation policy (6 months)
+*   Changelog for all breaking changes
+*   Error Contracts: Standard error codes (4xx, 5xx)
+*   Retry-after headers and exponential backoff for workflows
+
+**Integration Capabilities**
+*   **Seamless integration with enterprise systems and SaaS**
+*   Supports out-of-the-box and custom integrations with leading enterprise tools/platforms
+    *   ITSM (ServiceNow, Jira Service Management)
+    *   Developer tools (GitHub, GitLab, Bitbucket)
+    *   Data platforms (Data Lakes, Snowflake, BigQuery, S3, Azure Data Lake)
+    *   Messaging/Collaboration (Slack, MS Teams, Mattermost)
+    *   SIEM/SOC (Splunk, Elastic SIEM)
+    *   ERP/CRM (SAP, Salesforce, Dynamics)
+    *   Cloud providers (AWS, Azure, GCP)
+    *   Notification (email, SMS, push, webhook)
+    *   LeanIX (Enterprise Architecture Management)
+*   Custom REST/SOAP APIs and other SaaS/enterprise platforms via open connectors
+*   Integrations are UI/marketplace-driven
+*   Support for open APIs/SDKs, event-driven, polling, and plugin-based patterns
+
+**Deployment Options**
+*   Multi-cloud and multi-region deployment capabilities
+*   Supports containerized deployment with Docker and Kubernetes
+*   Offers cloud-native deployment on AWS, Azure, and GCP
+*   Provides on-premises deployment options
+*   Supports hybrid deployment models
+*   Support across multiple regions and cloud providers with geo-redundancy, failover, and regional compliance
+
+**Monitoring & Analytics**
+*   Prometheus integration for metrics collection
+*   Health check endpoints
+*   Tracks performance metrics
+*   Grafana dashboard integration
+*   Includes usage and behavioral analytics
+*   Standard Azure monitoring capabilities (in comparison)
+*   Cost Management & Analytics: Cost/billing analytics per tenant/workspace
+*   Showback/chargeback dashboards
+*   Observability with ELK and Sentry OSS
+
+**Admin Workflows & Features**
+*   Policy Management (UI, Enforcement, Advanced)
+*   Admin Setup
+*   Troubleshooting
+*   Advanced Admin Tasks
+*   Installation and Deployment
+*   Configuration
+*   User Management
+*   Server Management
+*   Workspace Management
+*   Security Administration
+*   Monitoring and Alerting
+*   Backup and Recovery
+*   Performance Tuning
+*   Maintenance Tasks
+*   Workflow Builder: Visually build and test automations
+    *   Drag-drop builder
+    *   Versioning
+    *   Error handling
+    *   Test mode
+*   Custom connector for a new enterprise data lake (example workflow)
+*   Rolling out a new branding theme for a partner tenant (example workflow)
+
+**Internationalization & Accessibility**
+*   UI and documentation support **30+ languages**
+*   Persistent language switcher
+*   **WCAG 2.1 AA+ accessibility**
+*   ISO 9241, ISO 25010 accessibility standards
+*   ARIA labels
+*   Keyboard navigation
+*   Dyslexia-friendly fonts, high-contrast/large-font modes, alternative input devices (Advanced)
+*   Real user accessibility testing (Advanced)
+
+**Development & Code Quality**
+*   Follows established naming conventions
+*   Safe Refactoring Process with small steps, testing, version control, and code review
+*   Safe Refactoring Tools (validate-changes.js, safe-refactor.js)
+*   Comprehensive Testing Strategies (Unit, integration, E2E, load, security) using Jest, React Testing Library, Cypress, pytest, Locust, OWASP ZAP
+*   Audit log and compliance test coverage
+*   Documentation standards and best practices
+    *   Documentation Types: JSDoc, Inline Comments, README, API, Architecture, User
+    *   Documentation Generation Tools: JSDoc, Swagger UI, Markdown
+    *   Integration of documentation generation into CI/CD pipeline
+*   Contribution Guidelines (Fork, branch, PR workflow, Code style, linting, commit messages)
+*   Monorepo structure with workspace commands (pnpm install, build, test, lint, dev)
+*   Mandatory adherence to ISO, OWASP, NIST, and accessibility standards in code
+*   Code review and audit for all changes
+
+**Other Features**
+*   Agent Registration and Orchestration for any MCP-compatible AI agent
+*   Shared Context & Health Monitoring for agents
+*   Orchestrator Core Service & Workflow Engine
+*   Agent Marketplace & Discovery UI
+*   Agent Template System & Simulation Framework
+*   AI Governance: Model versioning, explainability, bias detection, human-in-the-loop review
+*   Legal & Regulatory: Automated DPA, e-signature, privacy policy, cookie consent, in-app legal docs
+*   DevOps & Observability: GitOps, blue/green/canary deploys, synthetic monitoring, RUM, frontend error tracking
+*   Automated Backup & Disaster Recovery: Scheduled, geo-redundant backups; automated restore, DR drills, and business continuity documentation

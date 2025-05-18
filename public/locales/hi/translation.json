@@ -1,0 +1,45 @@
+{
+  "profile": {
+    "title": "प्रोफ़ाइल"
+  },
+  "settings": {
+    "title": "सेटिंग्स"
+  },
+  "theme": {
+    "light": "लाइट",
+    "dark": "डार्क",
+    "system": "सिस्टम"
+  },
+  "language": {
+    "current": "वर्तमान भाषा"
+  },
+  "auth": {
+    "logout": "लॉगआउट",
+    "login": "लॉगिन",
+    "register": "रजिस्टर"
+  },
+  "workspace_integrations": {
+    "title": "वर्कस्पेस इंटीग्रेशन",
+    "description": "अपने वर्कस्पेस के लिए बाहरी सेवा कनेक्शन और MCP सर्वर इंटीग्रेशन प्रबंधित करें",
+    "new_integration": "नया इंटीग्रेशन",
+    "add_integration": "इंटीग्रेशन जोड़ें",
+    "search_placeholder": "इंटीग्रेशन खोजें...",
+    "no_integrations": "कोई इंटीग्रेशन नहीं मिला",
+    "no_integrations_description": "आपके वर्तमान फिल्टर से कोई इंटीग्रेशन मेल नहीं खाता। अपने फिल्टर मापदंडों को समायोजित करने का प्रयास करें या एक नया इंटीग्रेशन बनाएं।"
+  },
+  "integration_types": {
+    "data_storage": {
+      "name": "डेटा स्टोरेज",
+      "description": "बाहरी डेटा स्टोरेज और BI टूल इंटीग्रेशन"
+    },
+    "mcp_server": {
+      "name": "MCP सर्वर",
+      "description": "टूल एक्सेस के लिए कनेक्टेड MCP सर्वर"
+    }
+  },
+  "user_profile": {
+    "title": "उपयोगकर्ता प्रोफ़ाइल",
+    "language_settings": "भाषा सेटिंग्स",
+    "preferred_language": "पसंदीदा भाषा"
+  }
+}

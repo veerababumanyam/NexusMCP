@@ -1,0 +1,641 @@
+client:536 WebSocket connection to 'wss://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/?token=dNPoftStT-8d' failed: 
+setupWebSocket @ client:536
+client:536 Uncaught (in promise) SyntaxError: Failed to construct 'WebSocket': The URL 'wss://localhost:undefined/?token=dNPoftStT-8d' is invalid.
+    at setupWebSocket (client:536:19)
+    at fallback (client:509:16)
+    at WebSocket.<anonymous> (client:555:7)
+chunk-RPCDYKBN.js?v=9a15f9b8:21551 Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools
+websocketUtils.ts:169 [WebSocket Utils] Installing WebSocket fixes
+websocketUtils.ts:192 [WebSocket Utils] Default WebSocket settings: Protocol=wss:, Host=660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev
+websocketUtils.ts:196 [WebSocket Utils] Development environment detected, applying additional fixes
+websocketUtils.ts:200 [WebSocket Utils] Replit environment detected, applying Replit-specific fixes
+mcpWebsocketClient.ts:95 [MCP Client] Replit environment detected, using optimized WebSocket URL: wss://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/ws/mcp-proxy
+mcpWebsocketClient.ts:101 [MCP Client] Connecting to WebSocket at wss://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/ws/mcp-proxy
+main.tsx:13 [Main] MCP WebSocket initial state: CONNECTING
+i18next.js?v=9a15f9b8:209 i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: 'translation', fallbackLng: Array(1), …}
+mcpWebsocketClient.ts:296 [MCP Client] WebSocket connected successfully
+i18n.ts:68 i18next::backendConnector: loading namespace translation for language en failed failed parsing /locales/en/translation.json to json
+output @ i18next.js?v=9a15f9b8:209
+warn @ i18next.js?v=9a15f9b8:202
+forward @ i18next.js?v=9a15f9b8:251
+warn @ i18next.js?v=9a15f9b8:234
+(anonymous) @ i18next.js?v=9a15f9b8:1605
+resolver @ i18next.js?v=9a15f9b8:1555
+(anonymous) @ i18next-http-backend.js?v=9a15f9b8:404
+(anonymous) @ i18next-http-backend.js?v=9a15f9b8:124
+Promise.then
+resolver2 @ i18next-http-backend.js?v=9a15f9b8:123
+Promise.then
+fetchIt2 @ i18next-http-backend.js?v=9a15f9b8:138
+requestWithFetch2 @ i18next-http-backend.js?v=9a15f9b8:161
+request2 @ i18next-http-backend.js?v=9a15f9b8:223
+loadUrl @ i18next-http-backend.js?v=9a15f9b8:381
+(anonymous) @ i18next-http-backend.js?v=9a15f9b8:371
+Promise.then
+_readAny @ i18next-http-backend.js?v=9a15f9b8:365
+read @ i18next-http-backend.js?v=9a15f9b8:354
+read @ i18next.js?v=9a15f9b8:1571
+loadOne @ i18next.js?v=9a15f9b8:1604
+(anonymous) @ i18next.js?v=9a15f9b8:1588
+prepareLoading @ i18next.js?v=9a15f9b8:1587
+load @ i18next.js?v=9a15f9b8:1592
+loadResources @ i18next.js?v=9a15f9b8:1915
+setLng @ i18next.js?v=9a15f9b8:2026
+changeLanguage @ i18next.js?v=9a15f9b8:2031
+load @ i18next.js?v=9a15f9b8:1881
+setTimeout
+init @ i18next.js?v=9a15f9b8:1886
+(anonymous) @ i18n.ts:68
+i18next.js?v=9a15f9b8:209 i18next: languageChanged en
+i18n.ts:68 i18next: init: i18next is already initialized. You should call init just once!
+output @ i18next.js?v=9a15f9b8:209
+warn @ i18next.js?v=9a15f9b8:202
+forward @ i18next.js?v=9a15f9b8:251
+warn @ i18next.js?v=9a15f9b8:234
+finish @ i18next.js?v=9a15f9b8:1873
+done @ i18next.js?v=9a15f9b8:2010
+(anonymous) @ i18next.js?v=9a15f9b8:2027
+(anonymous) @ i18next.js?v=9a15f9b8:1917
+(anonymous) @ i18next.js?v=9a15f9b8:1517
+loaded @ i18next.js?v=9a15f9b8:1501
+(anonymous) @ i18next.js?v=9a15f9b8:1607
+resolver @ i18next.js?v=9a15f9b8:1555
+(anonymous) @ i18next-http-backend.js?v=9a15f9b8:404
+(anonymous) @ i18next-http-backend.js?v=9a15f9b8:124
+Promise.then
+resolver2 @ i18next-http-backend.js?v=9a15f9b8:123
+Promise.then
+fetchIt2 @ i18next-http-backend.js?v=9a15f9b8:138
+requestWithFetch2 @ i18next-http-backend.js?v=9a15f9b8:161
+request2 @ i18next-http-backend.js?v=9a15f9b8:223
+loadUrl @ i18next-http-backend.js?v=9a15f9b8:381
+(anonymous) @ i18next-http-backend.js?v=9a15f9b8:371
+Promise.then
+_readAny @ i18next-http-backend.js?v=9a15f9b8:365
+read @ i18next-http-backend.js?v=9a15f9b8:354
+read @ i18next.js?v=9a15f9b8:1571
+loadOne @ i18next.js?v=9a15f9b8:1604
+(anonymous) @ i18next.js?v=9a15f9b8:1588
+prepareLoading @ i18next.js?v=9a15f9b8:1587
+load @ i18next.js?v=9a15f9b8:1592
+loadResources @ i18next.js?v=9a15f9b8:1915
+setLng @ i18next.js?v=9a15f9b8:2026
+changeLanguage @ i18next.js?v=9a15f9b8:2031
+load @ i18next.js?v=9a15f9b8:1881
+setTimeout
+init @ i18next.js?v=9a15f9b8:1886
+(anonymous) @ i18n.ts:68
+i18next.js?v=9a15f9b8:209 i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: 'translation', fallbackLng: Array(1), …}
+theme-provider.tsx:56 Failed to fetch branding settings: SyntaxError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+queryFn @ theme-provider.tsx:56
+await in queryFn
+fetchFn @ @tanstack_react-query.js?v=9a15f9b8:844
+run @ @tanstack_react-query.js?v=9a15f9b8:494
+start @ @tanstack_react-query.js?v=9a15f9b8:536
+fetch @ @tanstack_react-query.js?v=9a15f9b8:931
+executeFetch_fn @ @tanstack_react-query.js?v=9a15f9b8:2238
+onSubscribe @ @tanstack_react-query.js?v=9a15f9b8:1942
+subscribe @ @tanstack_react-query.js?v=9a15f9b8:24
+(anonymous) @ @tanstack_react-query.js?v=9a15f9b8:3093
+subscribeToStore @ chunk-RPCDYKBN.js?v=9a15f9b8:11984
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=9a15f9b8:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=9a15f9b8:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=9a15f9b8:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=9a15f9b8:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=9a15f9b8:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=9a15f9b8:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=9a15f9b8:19447
+(anonymous) @ chunk-RPCDYKBN.js?v=9a15f9b8:19328
+workLoop @ chunk-RPCDYKBN.js?v=9a15f9b8:197
+flushWork @ chunk-RPCDYKBN.js?v=9a15f9b8:176
+performWorkUntilDeadline @ chunk-RPCDYKBN.js?v=9a15f9b8:384
+chunk-RPCDYKBN.js?v=9a15f9b8:521 Warning: Encountered two children with the same key, `/integration-hub/monitoring`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+    at div
+    at div
+    at NavigationGroup (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/src/components/layout/sidebar/sidebar-navigation.tsx:72:28)
+    at div
+    at SidebarNavigation (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/src/components/layout/sidebar/sidebar-navigation.tsx:24:37)
+    at div
+    at div
+    at https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-AXMZZQ2X.js?v=9a15f9b8:42:13
+    at https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-scroll-area.js?v=9a15f9b8:116:13
+    at div
+    at https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-AXMZZQ2X.js?v=9a15f9b8:42:13
+    at Provider (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-OXZDJRWN.js?v=9a15f9b8:38:15)
+    at https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-scroll-area.js?v=9a15f9b8:54:7
+    at _c (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/src/components/ui/scroll-area.tsx:21:11)
+    at div
+    at Sidebar (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/src/components/layout/sidebar/sidebar.tsx:24:27)
+    at div
+    at MotionComponent (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/framer-motion.js?v=9a15f9b8:945:40)
+    at PresenceChild (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/framer-motion.js?v=9a15f9b8:121:24)
+    at AnimatePresence (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/framer-motion.js?v=9a15f9b8:210:26)
+    at div
+    at div
+    at AppLayout (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/src/components/layout/app-layout.tsx:25:29)
+    at SidebarProvider (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/src/lib/sidebar-context.tsx:26:35)
+    at AuthProvider (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/src/hooks/use-auth.tsx:26:32)
+    at ThemeProvider (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/src/lib/theme-provider.tsx:29:3)
+    at I18nProvider (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/src/lib/i18n-provider.tsx:22:32)
+    at Suspense
+    at QueryClientProvider (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=9a15f9b8:2869:3)
+    at App
+    at AuthProvider (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/src/hooks/use-auth.tsx?v=q_ftmQ2gn5zUXgmijZJ0Y:26:32)
+    at ThemeProvider (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/src/lib/theme-provider.tsx?v=q_ftmQ2gn5zUXgmijZJ0Y:29:3)
+    at QueryClientProvider (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=9a15f9b8:2869:3)
+printWarning @ chunk-RPCDYKBN.js?v=9a15f9b8:521
+error @ chunk-RPCDYKBN.js?v=9a15f9b8:505
+warnOnInvalidKey @ chunk-RPCDYKBN.js?v=9a15f9b8:10219
+reconcileChildrenArray @ chunk-RPCDYKBN.js?v=9a15f9b8:10235
+reconcileChildFibers2 @ chunk-RPCDYKBN.js?v=9a15f9b8:10559
+reconcileChildren @ chunk-RPCDYKBN.js?v=9a15f9b8:14290
+updateHostComponent @ chunk-RPCDYKBN.js?v=9a15f9b8:14807
+beginWork @ chunk-RPCDYKBN.js?v=9a15f9b8:15935
+beginWork$1 @ chunk-RPCDYKBN.js?v=9a15f9b8:19753
+performUnitOfWork @ chunk-RPCDYKBN.js?v=9a15f9b8:19198
+workLoopConcurrent @ chunk-RPCDYKBN.js?v=9a15f9b8:19189
+renderRootConcurrent @ chunk-RPCDYKBN.js?v=9a15f9b8:19164
+performConcurrentWorkOnRoot @ chunk-RPCDYKBN.js?v=9a15f9b8:18678
+workLoop @ chunk-RPCDYKBN.js?v=9a15f9b8:197
+flushWork @ chunk-RPCDYKBN.js?v=9a15f9b8:176
+performWorkUntilDeadline @ chunk-RPCDYKBN.js?v=9a15f9b8:384
+chunk-RPCDYKBN.js?v=9a15f9b8:521 Warning: Encountered two children with the same key, `/integration-hub/monitoring`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+    at div
+    at div
+    at NavigationGroup (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/src/components/layout/sidebar/sidebar-navigation.tsx:72:28)
+    at div
+    at SidebarNavigation (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/src/components/layout/sidebar/sidebar-navigation.tsx:24:37)
+    at div
+    at div
+    at https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-AXMZZQ2X.js?v=9a15f9b8:42:13
+    at https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-scroll-area.js?v=9a15f9b8:116:13
+    at div
+    at https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-AXMZZQ2X.js?v=9a15f9b8:42:13
+    at Provider (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-OXZDJRWN.js?v=9a15f9b8:38:15)
+    at https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-scroll-area.js?v=9a15f9b8:54:7
+    at _c (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/src/components/ui/scroll-area.tsx:21:11)
+    at div
+    at Sidebar (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/src/components/layout/sidebar/sidebar.tsx:24:27)
+    at div
+    at MotionComponent (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/framer-motion.js?v=9a15f9b8:945:40)
+    at PresenceChild (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/framer-motion.js?v=9a15f9b8:121:24)
+    at AnimatePresence (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/framer-motion.js?v=9a15f9b8:210:26)
+    at div
+    at div
+    at AppLayout (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/src/components/layout/app-layout.tsx:25:29)
+    at SidebarProvider (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/src/lib/sidebar-context.tsx:26:35)
+    at AuthProvider (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/src/hooks/use-auth.tsx:26:32)
+    at ThemeProvider (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/src/lib/theme-provider.tsx:29:3)
+    at I18nProvider (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/src/lib/i18n-provider.tsx:22:32)
+    at Suspense
+    at QueryClientProvider (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=9a15f9b8:2869:3)
+    at App
+    at AuthProvider (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/src/hooks/use-auth.tsx?v=q_ftmQ2gn5zUXgmijZJ0Y:26:32)
+    at ThemeProvider (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/src/lib/theme-provider.tsx?v=q_ftmQ2gn5zUXgmijZJ0Y:29:3)
+    at QueryClientProvider (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=9a15f9b8:2869:3)
+printWarning @ chunk-RPCDYKBN.js?v=9a15f9b8:521
+error @ chunk-RPCDYKBN.js?v=9a15f9b8:505
+warnOnInvalidKey @ chunk-RPCDYKBN.js?v=9a15f9b8:10219
+reconcileChildrenArray @ chunk-RPCDYKBN.js?v=9a15f9b8:10235
+reconcileChildFibers2 @ chunk-RPCDYKBN.js?v=9a15f9b8:10559
+reconcileChildren @ chunk-RPCDYKBN.js?v=9a15f9b8:14290
+updateHostComponent @ chunk-RPCDYKBN.js?v=9a15f9b8:14807
+beginWork @ chunk-RPCDYKBN.js?v=9a15f9b8:15935
+beginWork$1 @ chunk-RPCDYKBN.js?v=9a15f9b8:19753
+performUnitOfWork @ chunk-RPCDYKBN.js?v=9a15f9b8:19198
+workLoopConcurrent @ chunk-RPCDYKBN.js?v=9a15f9b8:19189
+renderRootConcurrent @ chunk-RPCDYKBN.js?v=9a15f9b8:19164
+performConcurrentWorkOnRoot @ chunk-RPCDYKBN.js?v=9a15f9b8:18678
+workLoop @ chunk-RPCDYKBN.js?v=9a15f9b8:197
+flushWork @ chunk-RPCDYKBN.js?v=9a15f9b8:176
+performWorkUntilDeadline @ chunk-RPCDYKBN.js?v=9a15f9b8:384
+sidebar-profile.tsx:85 i18next::translator: missingKey en translation profile.title profile.title
+sidebar-profile.tsx:92 i18next::translator: missingKey en translation settings.title settings.title
+sidebar-profile.tsx:105 i18next::translator: missingKey en translation theme.light theme.light
+sidebar-profile.tsx:113 i18next::translator: missingKey en translation theme.dark theme.dark
+sidebar-profile.tsx:121 i18next::translator: missingKey en translation theme.system theme.system
+sidebar-profile.tsx:131 i18next::translator: missingKey en translation language.current language.current
+sidebar-profile.tsx:144 i18next::translator: missingKey en translation auth.logout auth.logout
+theme-provider.tsx:56 Failed to fetch branding settings: SyntaxError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+queryFn @ theme-provider.tsx:56
+await in queryFn
+fetchFn @ @tanstack_react-query.js?v=9a15f9b8:844
+run @ @tanstack_react-query.js?v=9a15f9b8:494
+start @ @tanstack_react-query.js?v=9a15f9b8:536
+fetch @ @tanstack_react-query.js?v=9a15f9b8:931
+executeFetch_fn @ @tanstack_react-query.js?v=9a15f9b8:2238
+onSubscribe @ @tanstack_react-query.js?v=9a15f9b8:1942
+subscribe @ @tanstack_react-query.js?v=9a15f9b8:24
+(anonymous) @ @tanstack_react-query.js?v=9a15f9b8:3093
+subscribeToStore @ chunk-RPCDYKBN.js?v=9a15f9b8:11984
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=9a15f9b8:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=9a15f9b8:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=9a15f9b8:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=9a15f9b8:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=9a15f9b8:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=9a15f9b8:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=9a15f9b8:19447
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=9a15f9b8:18868
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=9a15f9b8:9119
+commitRootImpl @ chunk-RPCDYKBN.js?v=9a15f9b8:19432
+commitRoot @ chunk-RPCDYKBN.js?v=9a15f9b8:19277
+finishConcurrentRender @ chunk-RPCDYKBN.js?v=9a15f9b8:18805
+performConcurrentWorkOnRoot @ chunk-RPCDYKBN.js?v=9a15f9b8:18718
+workLoop @ chunk-RPCDYKBN.js?v=9a15f9b8:197
+flushWork @ chunk-RPCDYKBN.js?v=9a15f9b8:176
+performWorkUntilDeadline @ chunk-RPCDYKBN.js?v=9a15f9b8:384
+sidebar-profile.tsx:85 i18next::translator: missingKey en translation profile.title profile.title
+sidebar-profile.tsx:92 i18next::translator: missingKey en translation settings.title settings.title
+sidebar-profile.tsx:105 i18next::translator: missingKey en translation theme.light theme.light
+sidebar-profile.tsx:113 i18next::translator: missingKey en translation theme.dark theme.dark
+sidebar-profile.tsx:121 i18next::translator: missingKey en translation theme.system theme.system
+sidebar-profile.tsx:131 i18next::translator: missingKey en translation language.current language.current
+sidebar-profile.tsx:144 i18next::translator: missingKey en translation auth.logout auth.logout
+sidebar-profile.tsx:85 i18next::translator: missingKey en translation profile.title profile.title
+sidebar-profile.tsx:92 i18next::translator: missingKey en translation settings.title settings.title
+sidebar-profile.tsx:105 i18next::translator: missingKey en translation theme.light theme.light
+sidebar-profile.tsx:113 i18next::translator: missingKey en translation theme.dark theme.dark
+sidebar-profile.tsx:121 i18next::translator: missingKey en translation theme.system theme.system
+sidebar-profile.tsx:131 i18next::translator: missingKey en translation language.current language.current
+sidebar-profile.tsx:144 i18next::translator: missingKey en translation auth.logout auth.logout
+chunk-RPCDYKBN.js?v=9a15f9b8:9934 Uncaught Error: Objects are not valid as a React child (found: object with keys {$$typeof, render}). If you meant to render a collection of children, use an array instead.
+    at throwOnInvalidObjectType (chunk-RPCDYKBN.js?v=9a15f9b8:9934:17)
+    at createChild (chunk-RPCDYKBN.js?v=9a15f9b8:10110:15)
+    at reconcileChildrenArray (chunk-RPCDYKBN.js?v=9a15f9b8:10282:33)
+    at reconcileChildFibers2 (chunk-RPCDYKBN.js?v=9a15f9b8:10559:24)
+    at reconcileChildren (chunk-RPCDYKBN.js?v=9a15f9b8:14290:37)
+    at updateHostComponent (chunk-RPCDYKBN.js?v=9a15f9b8:14807:11)
+    at beginWork (chunk-RPCDYKBN.js?v=9a15f9b8:15935:22)
+    at HTMLUnknownElement.callCallback2 (chunk-RPCDYKBN.js?v=9a15f9b8:3674:22)
+    at Object.invokeGuardedCallbackDev (chunk-RPCDYKBN.js?v=9a15f9b8:3699:24)
+    at invokeGuardedCallback (chunk-RPCDYKBN.js?v=9a15f9b8:3733:39)
+throwOnInvalidObjectType @ chunk-RPCDYKBN.js?v=9a15f9b8:9934
+createChild @ chunk-RPCDYKBN.js?v=9a15f9b8:10110
+reconcileChildrenArray @ chunk-RPCDYKBN.js?v=9a15f9b8:10282
+reconcileChildFibers2 @ chunk-RPCDYKBN.js?v=9a15f9b8:10559
+reconcileChildren @ chunk-RPCDYKBN.js?v=9a15f9b8:14290
+updateHostComponent @ chunk-RPCDYKBN.js?v=9a15f9b8:14807
+beginWork @ chunk-RPCDYKBN.js?v=9a15f9b8:15935
+callCallback2 @ chunk-RPCDYKBN.js?v=9a15f9b8:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=9a15f9b8:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=9a15f9b8:3733
+beginWork$1 @ chunk-RPCDYKBN.js?v=9a15f9b8:19765
+performUnitOfWork @ chunk-RPCDYKBN.js?v=9a15f9b8:19198
+workLoopSync @ chunk-RPCDYKBN.js?v=9a15f9b8:19137
+renderRootSync @ chunk-RPCDYKBN.js?v=9a15f9b8:19116
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=9a15f9b8:18874
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=9a15f9b8:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=9a15f9b8:18627
+setTimeout
+defaultScheduler @ @tanstack_react-query.js?v=9a15f9b8:546
+flush @ @tanstack_react-query.js?v=9a15f9b8:570
+batch @ @tanstack_react-query.js?v=9a15f9b8:588
+dispatch_fn @ @tanstack_react-query.js?v=9a15f9b8:1001
+onError @ @tanstack_react-query.js?v=9a15f9b8:866
+reject @ @tanstack_react-query.js?v=9a15f9b8:465
+(anonymous) @ @tanstack_react-query.js?v=9a15f9b8:508
+Promise.catch
+run @ @tanstack_react-query.js?v=9a15f9b8:498
+start @ @tanstack_react-query.js?v=9a15f9b8:536
+fetch @ @tanstack_react-query.js?v=9a15f9b8:931
+executeFetch_fn @ @tanstack_react-query.js?v=9a15f9b8:2238
+onSubscribe @ @tanstack_react-query.js?v=9a15f9b8:1942
+subscribe @ @tanstack_react-query.js?v=9a15f9b8:24
+(anonymous) @ @tanstack_react-query.js?v=9a15f9b8:3093
+subscribeToStore @ chunk-RPCDYKBN.js?v=9a15f9b8:11984
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=9a15f9b8:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=9a15f9b8:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=9a15f9b8:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=9a15f9b8:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=9a15f9b8:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=9a15f9b8:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=9a15f9b8:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=9a15f9b8:19416
+commitRoot @ chunk-RPCDYKBN.js?v=9a15f9b8:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=9a15f9b8:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=9a15f9b8:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=9a15f9b8:18627
+setTimeout
+defaultScheduler @ @tanstack_react-query.js?v=9a15f9b8:546
+flush @ @tanstack_react-query.js?v=9a15f9b8:570
+batch @ @tanstack_react-query.js?v=9a15f9b8:588
+dispatch_fn @ @tanstack_react-query.js?v=9a15f9b8:1001
+setData @ @tanstack_react-query.js?v=9a15f9b8:699
+onSuccess @ @tanstack_react-query.js?v=9a15f9b8:902
+resolve @ @tanstack_react-query.js?v=9a15f9b8:456
+Promise.then
+run @ @tanstack_react-query.js?v=9a15f9b8:498
+start @ @tanstack_react-query.js?v=9a15f9b8:536
+fetch @ @tanstack_react-query.js?v=9a15f9b8:931
+executeFetch_fn @ @tanstack_react-query.js?v=9a15f9b8:2238
+onSubscribe @ @tanstack_react-query.js?v=9a15f9b8:1942
+subscribe @ @tanstack_react-query.js?v=9a15f9b8:24
+(anonymous) @ @tanstack_react-query.js?v=9a15f9b8:3093
+subscribeToStore @ chunk-RPCDYKBN.js?v=9a15f9b8:11984
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=9a15f9b8:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=9a15f9b8:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=9a15f9b8:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=9a15f9b8:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=9a15f9b8:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=9a15f9b8:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=9a15f9b8:19447
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=9a15f9b8:18868
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=9a15f9b8:9119
+commitRootImpl @ chunk-RPCDYKBN.js?v=9a15f9b8:19432
+commitRoot @ chunk-RPCDYKBN.js?v=9a15f9b8:19277
+finishConcurrentRender @ chunk-RPCDYKBN.js?v=9a15f9b8:18805
+performConcurrentWorkOnRoot @ chunk-RPCDYKBN.js?v=9a15f9b8:18718
+workLoop @ chunk-RPCDYKBN.js?v=9a15f9b8:197
+flushWork @ chunk-RPCDYKBN.js?v=9a15f9b8:176
+performWorkUntilDeadline @ chunk-RPCDYKBN.js?v=9a15f9b8:384
+chunk-RPCDYKBN.js?v=9a15f9b8:9934 Uncaught Error: Objects are not valid as a React child (found: object with keys {$$typeof, render}). If you meant to render a collection of children, use an array instead.
+    at throwOnInvalidObjectType (chunk-RPCDYKBN.js?v=9a15f9b8:9934:17)
+    at createChild (chunk-RPCDYKBN.js?v=9a15f9b8:10110:15)
+    at reconcileChildrenArray (chunk-RPCDYKBN.js?v=9a15f9b8:10282:33)
+    at reconcileChildFibers2 (chunk-RPCDYKBN.js?v=9a15f9b8:10559:24)
+    at reconcileChildren (chunk-RPCDYKBN.js?v=9a15f9b8:14290:37)
+    at updateHostComponent (chunk-RPCDYKBN.js?v=9a15f9b8:14807:11)
+    at beginWork (chunk-RPCDYKBN.js?v=9a15f9b8:15935:22)
+    at HTMLUnknownElement.callCallback2 (chunk-RPCDYKBN.js?v=9a15f9b8:3674:22)
+    at Object.invokeGuardedCallbackDev (chunk-RPCDYKBN.js?v=9a15f9b8:3699:24)
+    at invokeGuardedCallback (chunk-RPCDYKBN.js?v=9a15f9b8:3733:39)
+throwOnInvalidObjectType @ chunk-RPCDYKBN.js?v=9a15f9b8:9934
+createChild @ chunk-RPCDYKBN.js?v=9a15f9b8:10110
+reconcileChildrenArray @ chunk-RPCDYKBN.js?v=9a15f9b8:10282
+reconcileChildFibers2 @ chunk-RPCDYKBN.js?v=9a15f9b8:10559
+reconcileChildren @ chunk-RPCDYKBN.js?v=9a15f9b8:14290
+updateHostComponent @ chunk-RPCDYKBN.js?v=9a15f9b8:14807
+beginWork @ chunk-RPCDYKBN.js?v=9a15f9b8:15935
+callCallback2 @ chunk-RPCDYKBN.js?v=9a15f9b8:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=9a15f9b8:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=9a15f9b8:3733
+beginWork$1 @ chunk-RPCDYKBN.js?v=9a15f9b8:19765
+performUnitOfWork @ chunk-RPCDYKBN.js?v=9a15f9b8:19198
+workLoopSync @ chunk-RPCDYKBN.js?v=9a15f9b8:19137
+renderRootSync @ chunk-RPCDYKBN.js?v=9a15f9b8:19116
+recoverFromConcurrentError @ chunk-RPCDYKBN.js?v=9a15f9b8:18736
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=9a15f9b8:18879
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=9a15f9b8:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=9a15f9b8:18627
+setTimeout
+defaultScheduler @ @tanstack_react-query.js?v=9a15f9b8:546
+flush @ @tanstack_react-query.js?v=9a15f9b8:570
+batch @ @tanstack_react-query.js?v=9a15f9b8:588
+dispatch_fn @ @tanstack_react-query.js?v=9a15f9b8:1001
+onError @ @tanstack_react-query.js?v=9a15f9b8:866
+reject @ @tanstack_react-query.js?v=9a15f9b8:465
+(anonymous) @ @tanstack_react-query.js?v=9a15f9b8:508
+Promise.catch
+run @ @tanstack_react-query.js?v=9a15f9b8:498
+start @ @tanstack_react-query.js?v=9a15f9b8:536
+fetch @ @tanstack_react-query.js?v=9a15f9b8:931
+executeFetch_fn @ @tanstack_react-query.js?v=9a15f9b8:2238
+onSubscribe @ @tanstack_react-query.js?v=9a15f9b8:1942
+subscribe @ @tanstack_react-query.js?v=9a15f9b8:24
+(anonymous) @ @tanstack_react-query.js?v=9a15f9b8:3093
+subscribeToStore @ chunk-RPCDYKBN.js?v=9a15f9b8:11984
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=9a15f9b8:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=9a15f9b8:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=9a15f9b8:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=9a15f9b8:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=9a15f9b8:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=9a15f9b8:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=9a15f9b8:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=9a15f9b8:19416
+commitRoot @ chunk-RPCDYKBN.js?v=9a15f9b8:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=9a15f9b8:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=9a15f9b8:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=9a15f9b8:18627
+setTimeout
+defaultScheduler @ @tanstack_react-query.js?v=9a15f9b8:546
+flush @ @tanstack_react-query.js?v=9a15f9b8:570
+batch @ @tanstack_react-query.js?v=9a15f9b8:588
+dispatch_fn @ @tanstack_react-query.js?v=9a15f9b8:1001
+setData @ @tanstack_react-query.js?v=9a15f9b8:699
+onSuccess @ @tanstack_react-query.js?v=9a15f9b8:902
+resolve @ @tanstack_react-query.js?v=9a15f9b8:456
+Promise.then
+run @ @tanstack_react-query.js?v=9a15f9b8:498
+start @ @tanstack_react-query.js?v=9a15f9b8:536
+fetch @ @tanstack_react-query.js?v=9a15f9b8:931
+executeFetch_fn @ @tanstack_react-query.js?v=9a15f9b8:2238
+onSubscribe @ @tanstack_react-query.js?v=9a15f9b8:1942
+subscribe @ @tanstack_react-query.js?v=9a15f9b8:24
+(anonymous) @ @tanstack_react-query.js?v=9a15f9b8:3093
+subscribeToStore @ chunk-RPCDYKBN.js?v=9a15f9b8:11984
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=9a15f9b8:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=9a15f9b8:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=9a15f9b8:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=9a15f9b8:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=9a15f9b8:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=9a15f9b8:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=9a15f9b8:19447
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=9a15f9b8:18868
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=9a15f9b8:9119
+commitRootImpl @ chunk-RPCDYKBN.js?v=9a15f9b8:19432
+commitRoot @ chunk-RPCDYKBN.js?v=9a15f9b8:19277
+finishConcurrentRender @ chunk-RPCDYKBN.js?v=9a15f9b8:18805
+performConcurrentWorkOnRoot @ chunk-RPCDYKBN.js?v=9a15f9b8:18718
+workLoop @ chunk-RPCDYKBN.js?v=9a15f9b8:197
+flushWork @ chunk-RPCDYKBN.js?v=9a15f9b8:176
+performWorkUntilDeadline @ chunk-RPCDYKBN.js?v=9a15f9b8:384
+chunk-RPCDYKBN.js?v=9a15f9b8:14032 The above error occurred in the <div> component:
+
+    at div
+    at EmptyState (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/src/components/ui/empty-state.tsx:20:3)
+    at div
+    at https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-AXMZZQ2X.js?v=9a15f9b8:42:13
+    at Presence (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-E4UC4BFD.js?v=9a15f9b8:24:11)
+    at https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-tabs.js?v=9a15f9b8:176:13
+    at _c5 (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/src/components/ui/tabs.tsx:72:12)
+    at div
+    at https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-AXMZZQ2X.js?v=9a15f9b8:42:13
+    at Provider (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-OXZDJRWN.js?v=9a15f9b8:38:15)
+    at https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-tabs.js?v=9a15f9b8:54:7
+    at div
+    at DataStorageLandingPage (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/src/pages/integration-hub/data-storage/data-storage-landing.tsx:42:21)
+    at Route (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=9a15f9b8:280:16)
+    at ProtectedRoute (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/src/lib/protected-route.tsx:22:3)
+    at Switch (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=9a15f9b8:336:17)
+    at AppRoutes
+    at div
+    at main
+    at div
+    at div
+    at AppLayout (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/src/components/layout/app-layout.tsx:25:29)
+    at SidebarProvider (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/src/lib/sidebar-context.tsx:26:35)
+    at AuthProvider (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/src/hooks/use-auth.tsx:26:32)
+    at ThemeProvider (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/src/lib/theme-provider.tsx:29:3)
+    at I18nProvider (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/src/lib/i18n-provider.tsx:22:32)
+    at Suspense
+    at QueryClientProvider (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=9a15f9b8:2869:3)
+    at App
+    at AuthProvider (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/src/hooks/use-auth.tsx?v=q_ftmQ2gn5zUXgmijZJ0Y:26:32)
+    at ThemeProvider (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/src/lib/theme-provider.tsx?v=q_ftmQ2gn5zUXgmijZJ0Y:29:3)
+    at QueryClientProvider (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=9a15f9b8:2869:3)
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+logCapturedError @ chunk-RPCDYKBN.js?v=9a15f9b8:14032
+update.callback @ chunk-RPCDYKBN.js?v=9a15f9b8:14052
+callCallback @ chunk-RPCDYKBN.js?v=9a15f9b8:11248
+commitUpdateQueue @ chunk-RPCDYKBN.js?v=9a15f9b8:11265
+commitLayoutEffectOnFiber @ chunk-RPCDYKBN.js?v=9a15f9b8:17093
+commitLayoutMountEffects_complete @ chunk-RPCDYKBN.js?v=9a15f9b8:17980
+commitLayoutEffects_begin @ chunk-RPCDYKBN.js?v=9a15f9b8:17969
+commitLayoutEffects @ chunk-RPCDYKBN.js?v=9a15f9b8:17920
+commitRootImpl @ chunk-RPCDYKBN.js?v=9a15f9b8:19353
+commitRoot @ chunk-RPCDYKBN.js?v=9a15f9b8:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=9a15f9b8:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=9a15f9b8:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=9a15f9b8:18627
+setTimeout
+defaultScheduler @ @tanstack_react-query.js?v=9a15f9b8:546
+flush @ @tanstack_react-query.js?v=9a15f9b8:570
+batch @ @tanstack_react-query.js?v=9a15f9b8:588
+dispatch_fn @ @tanstack_react-query.js?v=9a15f9b8:1001
+onError @ @tanstack_react-query.js?v=9a15f9b8:866
+reject @ @tanstack_react-query.js?v=9a15f9b8:465
+(anonymous) @ @tanstack_react-query.js?v=9a15f9b8:508
+Promise.catch
+run @ @tanstack_react-query.js?v=9a15f9b8:498
+start @ @tanstack_react-query.js?v=9a15f9b8:536
+fetch @ @tanstack_react-query.js?v=9a15f9b8:931
+executeFetch_fn @ @tanstack_react-query.js?v=9a15f9b8:2238
+onSubscribe @ @tanstack_react-query.js?v=9a15f9b8:1942
+subscribe @ @tanstack_react-query.js?v=9a15f9b8:24
+(anonymous) @ @tanstack_react-query.js?v=9a15f9b8:3093
+subscribeToStore @ chunk-RPCDYKBN.js?v=9a15f9b8:11984
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=9a15f9b8:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=9a15f9b8:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=9a15f9b8:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=9a15f9b8:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=9a15f9b8:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=9a15f9b8:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=9a15f9b8:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=9a15f9b8:19416
+commitRoot @ chunk-RPCDYKBN.js?v=9a15f9b8:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=9a15f9b8:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=9a15f9b8:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=9a15f9b8:18627
+setTimeout
+defaultScheduler @ @tanstack_react-query.js?v=9a15f9b8:546
+flush @ @tanstack_react-query.js?v=9a15f9b8:570
+batch @ @tanstack_react-query.js?v=9a15f9b8:588
+dispatch_fn @ @tanstack_react-query.js?v=9a15f9b8:1001
+setData @ @tanstack_react-query.js?v=9a15f9b8:699
+onSuccess @ @tanstack_react-query.js?v=9a15f9b8:902
+resolve @ @tanstack_react-query.js?v=9a15f9b8:456
+Promise.then
+run @ @tanstack_react-query.js?v=9a15f9b8:498
+start @ @tanstack_react-query.js?v=9a15f9b8:536
+fetch @ @tanstack_react-query.js?v=9a15f9b8:931
+executeFetch_fn @ @tanstack_react-query.js?v=9a15f9b8:2238
+onSubscribe @ @tanstack_react-query.js?v=9a15f9b8:1942
+subscribe @ @tanstack_react-query.js?v=9a15f9b8:24
+(anonymous) @ @tanstack_react-query.js?v=9a15f9b8:3093
+subscribeToStore @ chunk-RPCDYKBN.js?v=9a15f9b8:11984
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=9a15f9b8:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=9a15f9b8:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=9a15f9b8:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=9a15f9b8:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=9a15f9b8:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=9a15f9b8:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=9a15f9b8:19447
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=9a15f9b8:18868
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=9a15f9b8:9119
+commitRootImpl @ chunk-RPCDYKBN.js?v=9a15f9b8:19432
+commitRoot @ chunk-RPCDYKBN.js?v=9a15f9b8:19277
+finishConcurrentRender @ chunk-RPCDYKBN.js?v=9a15f9b8:18805
+performConcurrentWorkOnRoot @ chunk-RPCDYKBN.js?v=9a15f9b8:18718
+workLoop @ chunk-RPCDYKBN.js?v=9a15f9b8:197
+flushWork @ chunk-RPCDYKBN.js?v=9a15f9b8:176
+performWorkUntilDeadline @ chunk-RPCDYKBN.js?v=9a15f9b8:384
+chunk-RPCDYKBN.js?v=9a15f9b8:9934 Uncaught Error: Objects are not valid as a React child (found: object with keys {$$typeof, render}). If you meant to render a collection of children, use an array instead.
+    at throwOnInvalidObjectType (chunk-RPCDYKBN.js?v=9a15f9b8:9934:17)
+    at createChild (chunk-RPCDYKBN.js?v=9a15f9b8:10110:15)
+    at reconcileChildrenArray (chunk-RPCDYKBN.js?v=9a15f9b8:10282:33)
+    at reconcileChildFibers2 (chunk-RPCDYKBN.js?v=9a15f9b8:10559:24)
+    at reconcileChildren (chunk-RPCDYKBN.js?v=9a15f9b8:14290:37)
+    at updateHostComponent (chunk-RPCDYKBN.js?v=9a15f9b8:14807:11)
+    at beginWork (chunk-RPCDYKBN.js?v=9a15f9b8:15935:22)
+    at beginWork$1 (chunk-RPCDYKBN.js?v=9a15f9b8:19753:22)
+    at performUnitOfWork (chunk-RPCDYKBN.js?v=9a15f9b8:19198:20)
+    at workLoopSync (chunk-RPCDYKBN.js?v=9a15f9b8:19137:13)
+throwOnInvalidObjectType @ chunk-RPCDYKBN.js?v=9a15f9b8:9934
+createChild @ chunk-RPCDYKBN.js?v=9a15f9b8:10110
+reconcileChildrenArray @ chunk-RPCDYKBN.js?v=9a15f9b8:10282
+reconcileChildFibers2 @ chunk-RPCDYKBN.js?v=9a15f9b8:10559
+reconcileChildren @ chunk-RPCDYKBN.js?v=9a15f9b8:14290
+updateHostComponent @ chunk-RPCDYKBN.js?v=9a15f9b8:14807
+beginWork @ chunk-RPCDYKBN.js?v=9a15f9b8:15935
+beginWork$1 @ chunk-RPCDYKBN.js?v=9a15f9b8:19753
+performUnitOfWork @ chunk-RPCDYKBN.js?v=9a15f9b8:19198
+workLoopSync @ chunk-RPCDYKBN.js?v=9a15f9b8:19137
+renderRootSync @ chunk-RPCDYKBN.js?v=9a15f9b8:19116
+recoverFromConcurrentError @ chunk-RPCDYKBN.js?v=9a15f9b8:18736
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=9a15f9b8:18879
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=9a15f9b8:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=9a15f9b8:18627
+setTimeout
+defaultScheduler @ @tanstack_react-query.js?v=9a15f9b8:546
+flush @ @tanstack_react-query.js?v=9a15f9b8:570
+batch @ @tanstack_react-query.js?v=9a15f9b8:588
+dispatch_fn @ @tanstack_react-query.js?v=9a15f9b8:1001
+onError @ @tanstack_react-query.js?v=9a15f9b8:866
+reject @ @tanstack_react-query.js?v=9a15f9b8:465
+(anonymous) @ @tanstack_react-query.js?v=9a15f9b8:508
+Promise.catch
+run @ @tanstack_react-query.js?v=9a15f9b8:498
+start @ @tanstack_react-query.js?v=9a15f9b8:536
+fetch @ @tanstack_react-query.js?v=9a15f9b8:931
+executeFetch_fn @ @tanstack_react-query.js?v=9a15f9b8:2238
+onSubscribe @ @tanstack_react-query.js?v=9a15f9b8:1942
+subscribe @ @tanstack_react-query.js?v=9a15f9b8:24
+(anonymous) @ @tanstack_react-query.js?v=9a15f9b8:3093
+subscribeToStore @ chunk-RPCDYKBN.js?v=9a15f9b8:11984
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=9a15f9b8:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=9a15f9b8:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=9a15f9b8:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=9a15f9b8:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=9a15f9b8:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=9a15f9b8:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=9a15f9b8:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=9a15f9b8:19416
+commitRoot @ chunk-RPCDYKBN.js?v=9a15f9b8:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=9a15f9b8:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=9a15f9b8:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=9a15f9b8:18627
+setTimeout
+defaultScheduler @ @tanstack_react-query.js?v=9a15f9b8:546
+flush @ @tanstack_react-query.js?v=9a15f9b8:570
+batch @ @tanstack_react-query.js?v=9a15f9b8:588
+dispatch_fn @ @tanstack_react-query.js?v=9a15f9b8:1001
+setData @ @tanstack_react-query.js?v=9a15f9b8:699
+onSuccess @ @tanstack_react-query.js?v=9a15f9b8:902
+resolve @ @tanstack_react-query.js?v=9a15f9b8:456
+Promise.then
+run @ @tanstack_react-query.js?v=9a15f9b8:498
+start @ @tanstack_react-query.js?v=9a15f9b8:536
+fetch @ @tanstack_react-query.js?v=9a15f9b8:931
+executeFetch_fn @ @tanstack_react-query.js?v=9a15f9b8:2238
+onSubscribe @ @tanstack_react-query.js?v=9a15f9b8:1942
+subscribe @ @tanstack_react-query.js?v=9a15f9b8:24
+(anonymous) @ @tanstack_react-query.js?v=9a15f9b8:3093
+subscribeToStore @ chunk-RPCDYKBN.js?v=9a15f9b8:11984
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=9a15f9b8:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=9a15f9b8:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=9a15f9b8:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=9a15f9b8:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=9a15f9b8:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=9a15f9b8:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=9a15f9b8:19447
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=9a15f9b8:18868
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=9a15f9b8:9119
+commitRootImpl @ chunk-RPCDYKBN.js?v=9a15f9b8:19432
+commitRoot @ chunk-RPCDYKBN.js?v=9a15f9b8:19277
+finishConcurrentRender @ chunk-RPCDYKBN.js?v=9a15f9b8:18805
+performConcurrentWorkOnRoot @ chunk-RPCDYKBN.js?v=9a15f9b8:18718
+workLoop @ chunk-RPCDYKBN.js?v=9a15f9b8:197
+flushWork @ chunk-RPCDYKBN.js?v=9a15f9b8:176
+performWorkUntilDeadline @ chunk-RPCDYKBN.js?v=9a15f9b8:384

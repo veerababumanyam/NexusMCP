@@ -1,0 +1,38 @@
+[MCP Client] WebSocket is already connecting or connected
+i18next::translator: missingKey hi translation profile.title profile.title
+i18next::translator: missingKey hi translation settings.title settings.title
+i18next::translator: missingKey hi translation theme.light theme.light
+i18next::translator: missingKey hi translation theme.dark theme.dark
+i18next::translator: missingKey hi translation theme.system theme.system
+i18next::translator: missingKey hi translation language.current language.current
+i18next::translator: missingKey hi translation auth.logout auth.logout
+(permissions || []).filter is not a function
+(permissions || []).filter is not a function
+The above error occurred in the <RoleManagementPage> component:
+
+    at RoleManagementPage (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/src/pages/access-manager/role-permissions-page.tsx:87:21)
+    at Route (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=105f35c8:280:16)
+    at ProtectedRoute (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/src/lib/protected-route.tsx:22:3)
+    at Switch (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=105f35c8:336:17)
+    at AppRoutes
+    at div
+    at main
+    at div
+    at div
+    at AppLayout (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/src/components/layout/app-layout.tsx:25:29)
+    at SidebarProvider (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/src/lib/sidebar-context.tsx:26:35)
+    at AuthProvider (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/src/hooks/use-auth.tsx:26:32)
+    at ThemeProvider (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/src/lib/theme-provider.tsx:28:3)
+    at I18nProvider (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/src/lib/i18n-provider.tsx:22:32)
+    at Suspense
+    at QueryClientProvider (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=105f35c8:2869:3)
+    at App
+    at AuthProvider (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/src/hooks/use-auth.tsx?v=C9XqgG_8BXXSD98wLo_tt:26:32)
+    at ThemeProvider (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/src/lib/theme-provider.tsx?v=C9XqgG_8BXXSD98wLo_tt:28:3)
+    at QueryClientProvider (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=105f35c8:2869:3)
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+(permissions || []).filter is not a function
+[WebSocket Utils] Ping timeout for ping-1747033392001-gc8r6cpek
+[MCP Client] Connection stability critical: 40.0%

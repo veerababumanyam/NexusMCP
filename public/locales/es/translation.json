@@ -1,0 +1,51 @@
+{
+  "workspace_integrations": {
+    "title": "Integraciones de Workspace",
+    "description": "Gestiona las conexiones a servicios externos e integraciones de servidores MCP para tus espacios de trabajo",
+    "new_integration": "Nueva Integración",
+    "add_integration": "Añadir Integración",
+    "search_placeholder": "Buscar integraciones...",
+    "no_integrations": "No se encontraron integraciones",
+    "no_integrations_description": "Ninguna integración coincide con tus filtros actuales. Intenta ajustar los criterios de filtro o crea una nueva integración."
+  },
+  "integration_types": {
+    "data_storage": {
+      "name": "Almacenamiento de Datos",
+      "description": "Integraciones con almacenamiento de datos externos y herramientas BI"
+    },
+    "mcp_server": {
+      "name": "Servidores MCP",
+      "description": "Servidores MCP conectados para acceso a herramientas"
+    },
+    "api_gateway": {
+      "name": "Puertas de Enlace API",
+      "description": "Puertas de enlace API externas y endpoints"
+    },
+    "oauth_provider": {
+      "name": "Proveedores OAuth",
+      "description": "Conexiones de integración OAuth/SSO"
+    },
+    "monitoring": {
+      "name": "Monitoreo",
+      "description": "Servicios externos de monitoreo y alertas"
+    }
+  },
+  "integration_dialog": {
+    "title": "Añadir Nueva Integración",
+    "description": "Conecta un servicio externo o servidor MCP a tu espacio de trabajo.",
+    "integration_type": "Tipo de Integración",
+    "name": "Nombre de Integración",
+    "connector_type": "Tipo de Conector",
+    "external_service": "Servicio Externo",
+    "connection_url": "URL de Conexión",
+    "create": "Crear",
+    "cancel": "Cancelar"
+  },
+  "user_profile": {
+    "title": "Perfil de Usuario",
+    "language_settings": "Configuración de Idioma",
+    "preferred_language": "Idioma Preferido",
+    "save_changes": "Guardar Cambios",
+    "language_saved": "Preferencia de idioma guardada con éxito"
+  }
+}

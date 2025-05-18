@@ -1,0 +1,27 @@
+**1. Overview & Goal**
+
+*   **1.1 Purpose:** This document outlines the functional, non-functional, and security requirements for the MetaMCP Gateway application.
+
+*1 Goal:** To create a middleware application that acts as a unified MCP (Model Context Protocol) endpoint (an MCP Server) for various upstream MCP clients (e.g., AI Assistants, IDE extensions). This gateway will securely connect to, manage, and aggregate capabilities (tools, prompts, resources) from multiple heterogeneous downstream MCP servers (STDIO, SSE, Custom) registered by the user, similar in concept to how Zapier connects different services.
+*   **1.3 Inspiration:** The architecture draws inspiration from the [metatool-ai/metatool-app](https://github.com/metatool-ai/metatool-app) project and aims to implement robust routing and security principles outlined in `ROUTING_REQUIREMENTS.md`.
+
+'/mcp-servers'
+2. Design, Impliment, configure Core Gateway Functionality (Server Role - Facing Upstream Clients)**
+
+*   **2.1 MCP Server Compliance:** The gateway MUST fully implement the MCP Server specification to be compatible with standard MCP Clients.
+*   **2.2 Connection Methods:**
+    *   **2.2.1 SSE Endpoint:** MUST provide a primary Secure Server-Sent Events (SSE over WSS/TLS) endpoint for upstream client connections (Ref: `README.md`, `ROUTING_REQUIREMENTS.md#SEC-11`).
+    *   **2.2.2 STDIO Proxy:** SHOULD provide a companion proxy executable/command (like `@metamcp/mcp-server-metamcp`) that allows local clients to connect via STDIO, which then communicates with the main gateway application (likely via its API/SSE endpoint).
+*   **2.3 Authentication (Upstream Clients):**
+    *   **2.3.1 API Key Authentication:** MUST support mandatory API Key authentication for all upstream client connections (SSE or proxy-to-gateway). API Keys must be securely generated, managed (created, listed, revoked), and associated with specific user profiles/projects. Keys MUST be validated on every connection attempt and potentially on subsequent requests depending on the protocol. Header-based (`Authorization: Bearer <key>`) and potentially URL-based key transmission (for clients unable to set headers) MUST be supported.
+*   **2.4 Capability Aggregation:**
+    *   **2.4.1 Tool Aggregation:** MUST aggregate `list_tools` responses from all *active* and *authorized* downstream MCP servers associated with the authenticated user's profile/workspace. Tool names MUST be appropriately namespaced or managed to avoid collisions if multiple downstream servers provide tools with the same name.
+    *   **2.4.2 Prompt/Resource Aggregation:** MUST similarly aggregate `list_prompts` and `list_resources` from active, authorized downstream servers.
+    *   **2.4.3 Status Reflection:** MUST reflect the aggregated capabilities accurately based on the *current* status and configuration (e.g., enabled/disabled tools) defined within the gateway's management interface.
+*   **2.5 Request Proxying & Routing:**
+    *   **2.5.1 Tool Calls:** When receiving a `call_tool` request, the gateway MUST identify the correct downstream MCP server responsible for that tool (based on the aggregated list) and proxy the request to it.
+    *   **2.5.2 Prompt/Resource Requests:** MUST similarly route requests involving specific prompts or resources to the appropriate downstream server.
+    *   **2.5.3 Response Handling:** MUST relay the response (result or error) from the downstream server back to the upstream client.
+*   **2.6 Workspace/Profile Management:**
+    *   **2.6.1 Multi-Tenancy:** MUST support multiple workspaces/profiles, ensuring that an authenticated connection only interacts with the downstream servers and capabilities associated with its specific workspace/profile.
+    *   **2.6.2 Isolation:** MUST strictly prevent context leakage between different workspaces/profiles.

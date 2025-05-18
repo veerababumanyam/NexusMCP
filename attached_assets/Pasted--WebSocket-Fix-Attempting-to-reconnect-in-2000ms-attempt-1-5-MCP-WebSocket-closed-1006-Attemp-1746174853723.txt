@@ -1,0 +1,100 @@
+[WebSocket Fix] Attempting to reconnect in 2000ms (attempt 1/5)
+MCP WebSocket closed: 1006 
+Attempting to reconnect in 2000ms (attempt 1/5)
+Connecting to MCP WebSocket at wss://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/ws/mcp-proxy
+[WebSocket Fix] Creating WebSocket connection to: wss://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/ws/mcp-proxy
+[WebSocket Fix] Attempting to reconnect...
+Attempting to reconnect in 3000ms (attempt 2/5)
+[WebSocket Fix] Attempting to reconnect...
+[WebSocket Fix] Creating WebSocket connection to: wss://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/ws/mcp-proxy
+WebSocket is already connected or connecting
+[WebSocket Fix] Connection established successfully
+MCP WebSocket connected
+[WebSocket Fix] Connection error: 
+Event {isTrusted: true}
+
+MCP WebSocket error: 
+Event {isTrusted: true}
+
+[WebSocket Fix] WebSocket connection error: 
+Event {isTrusted: true}
+
+[WebSocket Fix] Connection closed: 1006 
+[WebSocket Fix] Attempting to reconnect in 2000ms (attempt 1/5)
+MCP WebSocket closed: 1006 
+Attempting to reconnect in 2000ms (attempt 1/5)
+[WebSocket Fix] Connection established successfully
+MCP WebSocket connected
+[WebSocket Fix] Attempting to reconnect...
+[WebSocket Fix] Creating WebSocket connection to: wss://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/ws/mcp-proxy
+[WebSocket Fix] Connection error: 
+Event {isTrusted: true}
+
+MCP WebSocket error: 
+Event {isTrusted: true}
+
+[WebSocket Fix] Connection closed: 1006 
+[WebSocket Fix] Attempting to reconnect in 2000ms (attempt 1/5)
+MCP WebSocket closed: 1006 
+Attempting to reconnect in 2000ms (attempt 1/5)
+[WebSocket Fix] Attempting to reconnect...
+[WebSocket Fix] Creating WebSocket connection to: wss://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/ws/mcp-proxy
+Connecting to MCP WebSocket at wss://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/ws/mcp-proxy
+[WebSocket Fix] Creating WebSocket connection to: wss://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/ws/mcp-proxy
+[WebSocket Fix] Connection established successfully
+MCP WebSocket connected
+[WebSocket Fix] Connection error: 
+Event {isTrusted: true}
+
+MCP WebSocket error: 
+Event {isTrusted: true}
+
+[WebSocket Fix] Connection closed: 1006 
+[WebSocket Fix] Attempting to reconnect in 2000ms (attempt 1/5)
+MCP WebSocket closed: 1006 
+Attempting to reconnect in 2000ms (attempt 1/5)
+[WebSocket Fix] Connection established successfully
+MCP WebSocket connected
+[WebSocket Fix] Connection error: 
+Event {isTrusted: true}
+
+MCP WebSocket error: 
+Event {isTrusted: true}
+
+[WebSocket Fix] Connection closed: 1006 
+[WebSocket Fix] Attempting to reconnect in 2000ms (attempt 1/5)
+MCP WebSocket closed: 1006 
+Attempting to reconnect in 2000ms (attempt 1/5)
+[WebSocket Fix] Attempting to reconnect...
+[WebSocket Fix] Creating WebSocket connection to: wss://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/ws/mcp-proxy
+Connecting to MCP WebSocket at wss://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/ws/mcp-proxy
+[WebSocket Fix] Creating WebSocket connection to: wss://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/ws/mcp-proxy
+[WebSocket Fix] Connection established successfully
+MCP WebSocket connected
+[WebSocket Fix] Attempting to reconnect...
+Attempting to reconnect in 2000ms (attempt 1/5)
+[WebSocket Fix] Attempting to reconnect...
+[WebSocket Fix] Creating WebSocket connection to: wss://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/ws/mcp-proxy
+WebSocket is already connected or connecting
+[WebSocket Fix] Connection error: 
+Event {isTrusted: true}
+
+MCP WebSocket error: 
+Event {isTrusted: true}
+
+[WebSocket Fix] Connection closed: 1006 
+[WebSocket Fix] Attempting to reconnect in 2000ms (attempt 1/5)
+MCP WebSocket closed: 1006 
+Attempting to reconnect in 3000ms (attempt 2/5)
+Connecting to MCP WebSocket at wss://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/ws/mcp-proxy
+[WebSocket Fix] Creating WebSocket connection to: wss://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/ws/mcp-proxy
+[WebSocket Fix] Attempting to reconnect...
+[WebSocket Fix] Creating WebSocket connection to: wss://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/ws/mcp-proxy
+[WebSocket Fix] Connection established successfully
+MCP WebSocket connected
+[WebSocket Fix] Connection error: 
+Event {isTrusted: true}
+
+MCP WebSocket error: 
+Event {isTrusted: true}
+

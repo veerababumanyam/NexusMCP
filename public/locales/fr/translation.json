@@ -1,0 +1,51 @@
+{
+  "workspace_integrations": {
+    "title": "Intégrations d'Espace de Travail",
+    "description": "Gérez les connexions aux services externes et les intégrations de serveurs MCP pour vos espaces de travail",
+    "new_integration": "Nouvelle Intégration",
+    "add_integration": "Ajouter une Intégration",
+    "search_placeholder": "Rechercher des intégrations...",
+    "no_integrations": "Aucune intégration trouvée",
+    "no_integrations_description": "Aucune intégration ne correspond à vos filtres actuels. Essayez d'ajuster vos critères de filtrage ou créez une nouvelle intégration."
+  },
+  "integration_types": {
+    "data_storage": {
+      "name": "Stockage de Données",
+      "description": "Intégrations de stockage de données externes et d'outils BI"
+    },
+    "mcp_server": {
+      "name": "Serveurs MCP",
+      "description": "Serveurs MCP connectés pour l'accès aux outils"
+    },
+    "api_gateway": {
+      "name": "Passerelles API",
+      "description": "Passerelles API externes et points de terminaison"
+    },
+    "oauth_provider": {
+      "name": "Fournisseurs OAuth",
+      "description": "Connexions d'intégration OAuth/SSO"
+    },
+    "monitoring": {
+      "name": "Surveillance",
+      "description": "Services externes de surveillance et d'alerte"
+    }
+  },
+  "integration_dialog": {
+    "title": "Ajouter une Nouvelle Intégration",
+    "description": "Connectez un service externe ou un serveur MCP à votre espace de travail.",
+    "integration_type": "Type d'Intégration",
+    "name": "Nom de l'Intégration",
+    "connector_type": "Type de Connecteur",
+    "external_service": "Service Externe",
+    "connection_url": "URL de Connexion",
+    "create": "Créer",
+    "cancel": "Annuler"
+  },
+  "user_profile": {
+    "title": "Profil Utilisateur",
+    "language_settings": "Paramètres de Langue",
+    "preferred_language": "Langue Préférée",
+    "save_changes": "Enregistrer les Modifications",
+    "language_saved": "Préférence de langue enregistrée avec succès"
+  }
+}

@@ -1,0 +1,45 @@
+[vite] connecting...
+DOMException {}
+stack: "SyntaxError: Failed to construct 'WebSocket': The URL 'wss://localhost:undefined/?token=qkvVsjw_yTgw' is invalid.↵ at new t (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/__replco/static/devtools/eruda/3.2.3/eruda.js:2:218737)↵ at setupWebSocket (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/@vite/client:536:19)↵ at fallback (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/@vite/client:509:16)↵ at WebSocket.<anonymous> (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/@vite/client:555:7)"
+get stack: ƒ ()
+set stack: ƒ ()
+[[Prototype]]: DOMException
+
+Warning: validateDOMNesting(...): <button> cannot appear as a descendant of &lt;button&gt;.
+    at button
+    at div
+    at button
+    at _c (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/src/components/ui/button.tsx:47:11)
+    at https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-2K77HOHX.js?v=5305201b:79:13
+    at https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-2K77HOHX.js?v=5305201b:56:13
+    at https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-D7OHDVF4.js?v=5305201b:42:13
+    at https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-2K77HOHX.js?v=5305201b:79:13
+    at https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-2K77HOHX.js?v=5305201b:56:13
+    at https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-D7OHDVF4.js?v=5305201b:42:13
+    at https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-VOEDYIRF.js?v=5305201b:1927:13
+    at https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-dropdown-menu.js?v=5305201b:139:13
+    at https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-dropdown-menu.js?v=5305201b:938:13
+    at Provider (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-MV53PHM7.js?v=5305201b:48:15)
+    at Provider (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-MV53PHM7.js?v=5305201b:48:15)
+    at Provider (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-MV53PHM7.js?v=5305201b:48:15)
+    at Popper (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-VOEDYIRF.js?v=5305201b:1919:11)
+    at Menu (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-dropdown-menu.js?v=5305201b:93:11)
+    at Provider (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-MV53PHM7.js?v=5305201b:48:15)
+    at DropdownMenu (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-dropdown-menu.js?v=5305201b:904:5)
+    at div
+    at UserProfile (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/src/components/layout/user-profile.tsx:33:36)
+    at aside
+    at SidebarNav (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/src/components/layout/sidebar-nav.tsx:32:30)
+    at div
+    at AppLayout (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/src/components/layout/app-layout.tsx:22:29)
+    at DashboardPage (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/src/pages/dashboard-page.tsx:33:43)
+    at Route (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=5305201b:280:16)
+    at ProtectedRoute (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/src/lib/protected-route.tsx:22:3)
+    at Switch (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=5305201b:336:17)
+    at AppRoutes
+    at AuthProvider (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/src/hooks/use-auth.tsx:26:32)
+    at ThemeProvider (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/src/lib/theme-provider.tsx:25:3)
+    at QueryClientProvider (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=5305201b:2869:3)
+    at App
+    at AuthProvider (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/src/hooks/use-auth.tsx?v=y79USwWydvSSq_SVkrs-m:26:32)
+    at ThemeProvider…

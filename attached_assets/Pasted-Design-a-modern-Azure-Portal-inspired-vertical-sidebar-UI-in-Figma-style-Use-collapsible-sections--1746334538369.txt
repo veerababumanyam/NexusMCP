@@ -1,0 +1,165 @@
+Design a modern, Azure-Portal-inspired vertical sidebar UI in Figma style. Use collapsible sections with clear headers and consistent iconography (e.g., Fluent UI, Lucide, or Material Icons). Each menu item should include:
+
+- An icon (18–20px)
+- A label
+- A hover tooltip with a short, meaningful description
+
+Use Inter or Segoe UI font, spacing-friendly layout, light and dark mode support, and smooth section expand/collapse transitions.
+
+--- SIDEBAR STRUCTURE ---
+
+1. Overview
+   - 🏠 Dashboard  
+     • Tooltip: "Central hub showing system health and KPIs"
+   - 📊 Analytics  
+     • Tooltip: "Visualize metrics and trends across the platform"
+   - 📁 Activity Logs  
+     • Tooltip: "View and export system-wide audit trails"
+
+2. Workspaces
+   - 🗂️ Workspace Management  
+     • Tooltip: "Create and configure workspaces by team or project"
+   - 👥 Workspace Members  
+     • Tooltip: "Manage user roles and permissions within workspaces"
+   - 🧮 Resource Allocation  
+     • Tooltip: "Assign and monitor usage quotas per workspace"
+
+3. AI Agents
+   - 🤖 Agent Registry  
+     • Tooltip: "Register and manage your AI agents"
+   - 📈 Agent Monitoring  
+     • Tooltip: "Track live agent performance and status"
+   - 🪵 Execution Logs  
+     • Tooltip: "Review agent task execution history and errors"
+   - 🧰 Tool Catalog  
+     • Tooltip: "Explore and configure tools available to agents"
+
+4. Healthcare
+   - 🏥 PHI Management  
+     • Tooltip: "Handle protected health data with compliance controls"
+   - 💊 EHR Integrations  
+     • Tooltip: "Securely connect to Electronic Health Record systems"
+   - 🩺 Clinical Plugins  
+     • Tooltip: "Use healthcare-specific tools for clinical support"
+
+5. Infrastructure
+   - 🛢️ Database Management  
+     • Tooltip: "Monitor and tune database performance and backups"
+   - 🔀 Load Balancers  
+     • Tooltip: "Configure traffic rules for load distribution"
+   - 🌐 Edge Proxies  
+     • Tooltip: "Manage global content delivery proxies"
+   - ⚡ Caching Services  
+     • Tooltip: "Boost speed with distributed caching setup"
+   - 📬 Queue Management  
+     • Tooltip: "Manage queues for background tasks and jobs"
+
+6. MCP Servers
+   - 🖥️ Server Management  
+     • Tooltip: "Add and monitor MCP server instances"
+   - 💡 Server Health  
+     • Tooltip: "Check uptime and metrics of each server"
+   - 🌉 Connection Settings  
+     • Tooltip: "Control rate limits and server connection configs"
+   - 🧰 Tool Catalog  
+     • Tooltip: "Manage tools for all connected MCP servers"
+
+7. Integration Hub
+   - 🔗 Database Connections  
+     • Tooltip: "Connect external databases securely"
+   - 🔐 SSO Integration  
+     • Tooltip: "Enable login via SAML, OIDC, or LDAP"
+   - ✉️ SMTP Configuration  
+     • Tooltip: "Set up email notifications with test support"
+   - 📱 MFA Settings  
+     • Tooltip: "Enable SMS, app, or key-based MFA methods"
+   - 📡 Monitoring Integration  
+     • Tooltip: "Connect Prometheus, Grafana, or DataDog"
+   - 📨 Messaging Services  
+     • Tooltip: "Configure Twilio/SendGrid for messaging alerts"
+   - 🚀 CDN Settings  
+     • Tooltip: "Optimize content delivery with CDN control"
+
+8. Security Center
+   - 🛡️ Security Scanner  
+     • Tooltip: "Run vulnerability scans on your environment"
+   - 🚨 Breach Detection  
+     • Tooltip: "Detect and alert on suspicious behavior"
+   - 🔏 Certificate Management  
+     • Tooltip: "Manage TLS/SSL certificates and renewals"
+   - 🚫 IP Filtering  
+     • Tooltip: "Allow or block IPs for security hardening"
+   - 🧿 Vault Integration  
+     • Tooltip: "Connect with Vault or KMS for secret storage"
+
+9. Platform Configuration
+   - 🎨 Branding  
+     • Tooltip: "Customize appearance with your branding"
+   - 🧩 Modules  
+     • Tooltip: "Enable or disable platform-specific modules"
+   - 📝 Email Templates  
+     • Tooltip: "Edit templates used for system notifications"
+   - ✉️ SMTP Settings  
+     • Tooltip: "Manage SMTP for outbound system emails"
+   - 🧠 AI Providers  
+     • Tooltip: "Integrate OpenAI, Azure AI, or Anthropic models"
+   - 🌍 Geo-Redundancy  
+     • Tooltip: "Set up regional failover and HA deployment"
+
+10. Tools & APIs
+   - 🔑 API Keys  
+     • Tooltip: "Generate and manage platform API keys"
+   - 🌐 Webhook Configuration  
+     • Tooltip: "Trigger external systems with webhooks"
+   - 🧾 Token Management  
+     • Tooltip: "Control and monitor access tokens"
+   - 🛣️ API Gateway  
+     • Tooltip: "Manage traffic rules for APIs"
+   - 🧪 GraphQL Console  
+     • Tooltip: "Test and debug GraphQL queries live"
+
+11. Access Manager
+   - 🧱 Access Control  
+     • Tooltip: "Manage access via RBAC policies"
+   - 🧮 Permission Sets  
+     • Tooltip: "Define permission templates across roles"
+   - 📲 OAuth Clients  
+     • Tooltip: "Register client apps using OAuth"
+   - 🧷 Identity Providers  
+     • Tooltip: "Federate login via identity providers"
+   - 🎫 JWT Settings  
+     • Tooltip: "Set expiration and claims for JWT tokens"
+
+12. Administration
+   - 👤 User Management  
+     • Tooltip: "Add, update, or deactivate user accounts"
+   - 🧑‍💼 Roles & Permissions  
+     • Tooltip: "Assign role-based permissions"
+   - 🗃️ Directory Integration  
+     • Tooltip: "Sync with external user directories"
+   - 🧷 Security Policies  
+     • Tooltip: "Set password and session security rules"
+   - 📄 Audit Reports  
+     • Tooltip: "Download reports for security audits"
+   - ♻️ System Backup  
+     • Tooltip: "Schedule and manage automated backups"
+   - 🛠️ Platform Updates  
+     • Tooltip: "Configure and apply system upgrades"
+
+13. Compliance & Governance
+   - 📜 Policy Manager  
+     • Tooltip: "Create and enforce org-wide policies"
+   - 🗑️ Data Retention  
+     • Tooltip: "Control how long data is stored"
+   - 📑 Compliance Reports  
+     • Tooltip: "Generate GDPR, HIPAA, SOC2 reports"
+   - 🕵️ Privacy Controls  
+     • Tooltip: "Set user data privacy and consent rules"
+   - ⚠️ Risk Assessment  
+     • Tooltip: "Assess and mitigate compliance risks"
+
+-- Sidebar should support:
+- Light and dark modes
+- Keyboard and screen reader navigation
+- Section collapse/expand animations
+- Responsive design for small screens

@@ -1,0 +1,86 @@
+Objective:
+Reorganize the integration structure so that the following pages are merged under a single unified interface at `/integrations/logging` as individual tabs:
+
+- /integrations/bi-tools  
+- /integrations/databases  
+- /integrations/file-storage  
+- /integrations/data-warehouse  
+
+(Note: Rename the route if needed to better reflect the domain, e.g., `/integrations/data-pipeline` or `/integrations/storage-bi`)
+
+Design & Implementation Goal:
+Develop and integrate a production-ready, enterprise-grade solution for **Data Storage & Business Intelligence (BI)**, supporting seamless integration with external platforms for analytics, ETL/ELT, and centralized data storage.
+
+---
+
+**Tabs & Functionality:**
+
+1. **Data Lakes / Warehouses**
+   - **Tools Supported:** AWS S3, ADLS, GCS, Snowflake, Redshift, BigQuery
+   - **Integration Methods:** 
+     - Secure API endpoints for data push/pull
+     - Scheduled data exports (CSV, JSON, Parquet)
+     - Native/dedicated connectors
+
+2. **Business Intelligence Tools**
+   - **Tools Supported:** Tableau, Power BI, Looker, Qlik
+   - **Integration Methods:**
+     - Platform-specific connectors
+     - REST/GraphQL API access
+     - Export pipelines to BI-compatible storages
+
+3. **Databases**
+   - **Tools Supported:** PostgreSQL, MySQL, MongoDB, SQL Server
+   - **Integration Methods:**
+     - Secure DB connections via credentials or environment config
+     - Data sync jobs and validation APIs
+
+4. **File Storage**
+   - **Platforms Supported:** AWS S3, Azure Blob, Google Drive, Dropbox
+   - **Integration Methods:**
+     - OAuth2 or API Key auth
+     - Upload/download APIs
+     - Sync scheduler
+
+---
+
+**System-Wide Integration Tasks:**
+
+- **Frontend:**
+  - Create `/integrations/logging` page with tab-based UI
+  - Each tab loads respective integration forms/modules asynchronously
+  - Add tooltips or popovers with helpful descriptions for each tab/tool
+
+- **Sidebar Update:**
+  - Remove `/integrations/bi-tools`, `/databases`, `/file-storage`, and `/data-warehouse` entries
+  - Add a single menu item: **“Data Storage & BI”** pointing to `/integrations/logging` with icon and hover description
+
+- **Backend:**
+  - Create unified service/controller for Data Storage & BI integrations
+  - Define modular endpoints for each type (BI, DB, Storage, Warehouse)
+  - Handle validation, OAuth/key-based auth, and persistent config storage in DB
+
+- **Middleware:**
+  - Add permission checks for access to this unified route
+  - Apply rate limiting, logging, and audit trail for data transfers
+
+- **Persistence Layer:**
+  - Store integration configurations per tenant/workspace with status tracking
+  - Design schema to support credential storage (encrypted), schedule metadata, and sync logs
+
+- **App Root:**
+  - Update `App.tsx` or router config to include lazy-loaded unified route `/integrations/logging`
+
+---
+
+**Compliance & Production-Readiness:**
+- Scalable, fault-tolerant, cloud-native architecture
+- Secure auth and role-based access
+- Full dark/light mode support
+- Integration with existing observability stack
+- Responsive, accessible UI
+
+---
+
+**Output:**
+A fully functional, enterprise-grade **Data Storage & BI Integration** platform built into a unified tabbed interface at `/integrations/logging`, with full backend, middleware, and persistent support.

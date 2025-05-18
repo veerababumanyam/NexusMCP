@@ -1,0 +1,55 @@
+Build a fully integrated **Admin Dashboard** for application that allows organization admins to configure **identity providers**, **access policies**, **branding**, and **authentication methods**, with seamless support.
+
+### 🔐 **Identity & Authentication Integrations**
+Design backend and frontend components to support:
+* **LDAP Integration**: Support importing users from enterprise LDAP directories with secure bind credentials and attribute mapping.
+* **Azure AD Integration**: Enable OAuth2/OIDC-based connection for user sync and login.
+* **SSO Configuration**:
+  * Support SAML 2.0 and OIDC
+  * Tenant-specific metadata URLs and ACS endpoints
+  * Mapping identity claims to internal roles (email, department, role)
+
+* **MFA Support**:
+  * Toggle MFA per tenant
+  * Options: TOTP, WebAuthn, SMS/email OTP
+  * Policy enforcement (e.g., “MFA required for all Admins”)
+
+### 👥 **User Management**
+
+* **User Provisioning**:
+  * Bulk import via CSV, API, or identity sync
+  * Attribute mapping and transformation rules
+  * Role auto-assignment rules
+
+* **Access Control**:
+  * Role-based and group-based access to MCP resources
+  * Workspace-level user segmentation (integrates with WorkspaceService)
+  * Expiry and just-in-time access tokens
+
+* **Audit Logs**:
+  * Every login, role change, and config update is logged
+  * Visual timeline in dashboard + downloadable reports
+
+### 🖼️ **Branding & Customization**
+  * Company logo and theme colors
+  * Custom login background and footer text
+  * Domain-based login routing (`<tenant>.yourapp.com`)
+  * Welcome messages or notifications on login
+
+### ⚙️ **Advanced Settings**
+* **Password Policy Config**: Min length, complexity, expiry
+* **Session Management**: Timeout, concurrent session limits
+* **Terms of Service & Consent Logs**
+* **IP Whitelisting/Blacklisting**
+* **Security Alert Notifications** (e.g., login from new location)
+
+### 🌐 **API & Frontend**
+* **RESTful APIs** with OAuth2 authentication
+* **React-based Admin UI** with dynamic forms and validation
+* **Real-time status indicators** for identity connectors
+* **Notification system** for sync failures, login attempts, etc.
+
+### 💡 Bonus Considerations
+* Multi-region tenant support (data residency)
+* Integration with secret management tools for connector creds (e.g., Vault, AWS Secrets Manager)
+* Default tenant templates for quick onboarding

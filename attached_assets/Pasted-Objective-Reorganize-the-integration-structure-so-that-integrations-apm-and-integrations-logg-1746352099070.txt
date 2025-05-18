@@ -1,0 +1,44 @@
+Objective:
+Reorganize the integration structure so that `/integrations/apm` and `/integrations/logging` are merged as tabs within a single comprehensive page: `/integrations/monitoring`.
+
+Design & Implementation Guidelines:
+
+1. **New Unified Page:** `/integrations/monitoring`
+   - Title: "Monitoring, Logging & Observability"
+   - Purpose: Provide complete visibility into application health, performance, and usage aligned with enterprise-grade observability standards.
+
+2. **Tabs Structure on `/integrations/monitoring`:**
+   - Tab 1: **Application Monitoring (APM & Infrastructure)**
+     - Supported Tools: Datadog, Dynatrace, New Relic, Grafana, Prometheus
+     - Integration Methods: 
+       - Expose KPIs via Prometheus format or compatible endpoints
+       - Implement `/health` APIs for uptime checks
+   - Tab 2: **Log Aggregation**
+     - Supported Systems: Splunk, ELK Stack, Graylog, Datadog Logs, Azure Monitor Logs, GCP Logging
+     - Integration Methods:
+       - Forward logs in formats like JSON, Syslog, CEF, LEEF
+       - Connect to centralized log aggregators
+
+3. **Implementation Requirements:**
+   - Update **sidebar navigation**: “Monitoring” linking to `/integrations/monitoring`
+   - Modify **routing config** to support the new unified route `/integrations/monitoring` with tab-based rendering
+   - Backend:
+     - Consolidate APM and Logging configuration endpoints under a common controller/module
+     - Maintain existing functionality but group under unified service architecture
+	 = integrate with local databse for local copy
+   - Frontend:
+     - Design a tabbed interface with clear titles and descriptions
+     - Ensure each tab loads content asynchronously for performance
+   - Middleware:
+     - Ensure middleware and auth layers apply correctly to the unified route
+     - Logging and monitoring setup should be configurable per tenant/workspace if multi-tenant
+   - Entry Point:
+     - Update `App.tsx` or relevant root config to import the new monitoring page correctly with lazy-loading enabled
+	 
+4. **Compliance & Production-Readiness:**
+   - Ensure solution supports enterprise scalability, fault-tolerance, and seamless app integration
+   - Include dark/light mode UI support
+   - Ensure observability components follow standard security best practices
+
+Output:
+A fully functional, enterprise-ready Monitoring Integration UI and backend service that covers APM and Logging in a single, intuitive interface.

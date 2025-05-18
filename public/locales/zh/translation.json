@@ -1,0 +1,51 @@
+{
+  "workspace_integrations": {
+    "title": "工作区集成",
+    "description": "管理工作区的外部服务连接和MCP服务器集成",
+    "new_integration": "新建集成",
+    "add_integration": "添加集成",
+    "search_placeholder": "搜索集成...",
+    "no_integrations": "未找到集成",
+    "no_integrations_description": "没有符合当前筛选条件的集成。尝试调整筛选条件或创建新的集成。"
+  },
+  "integration_types": {
+    "data_storage": {
+      "name": "数据存储",
+      "description": "外部数据存储和BI工具集成"
+    },
+    "mcp_server": {
+      "name": "MCP服务器",
+      "description": "连接MCP服务器以访问工具"
+    },
+    "api_gateway": {
+      "name": "API网关",
+      "description": "外部API网关和端点"
+    },
+    "oauth_provider": {
+      "name": "OAuth提供商",
+      "description": "OAuth/SSO集成连接"
+    },
+    "monitoring": {
+      "name": "监控",
+      "description": "外部监控和警报服务"
+    }
+  },
+  "integration_dialog": {
+    "title": "添加新集成",
+    "description": "将外部服务或MCP服务器连接到您的工作区。",
+    "integration_type": "集成类型",
+    "name": "集成名称",
+    "connector_type": "连接器类型",
+    "external_service": "外部服务",
+    "connection_url": "连接URL",
+    "create": "创建",
+    "cancel": "取消"
+  },
+  "user_profile": {
+    "title": "用户资料",
+    "language_settings": "语言设置",
+    "preferred_language": "首选语言",
+    "save_changes": "保存更改",
+    "language_saved": "语言偏好设置已成功保存"
+  }
+}

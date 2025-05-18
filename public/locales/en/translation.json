@@ -1,0 +1,95 @@
+{
+  "workspace_integrations": {
+    "title": "Workspace Integrations",
+    "description": "Manage external service connections and MCP server integrations for your workspaces",
+    "new_integration": "New Integration",
+    "add_integration": "Add Integration",
+    "search_placeholder": "Search integrations...",
+    "no_integrations": "No integrations found",
+    "no_integrations_description": "No integrations match your current filters. Try adjusting your filter criteria or create a new integration.",
+    "resources": {
+      "percent_utilized": "{{percent}}% utilized"
+    },
+    "last_sync": {
+      "never": "Never"
+    },
+    "status": {
+      "active": "Active",
+      "provisioning": "Provisioning",
+      "degraded": "Degraded",
+      "error": "Error",
+      "paused": "Paused"
+    },
+    "actions": {
+      "menu_label": "Actions",
+      "configure": "Configure",
+      "view_details": "View Details",
+      "export_data": "Export Data",
+      "delete": "Delete",
+      "refresh": "Refresh"
+    },
+    "filters": {
+      "status": "Status",
+      "all_statuses": "All Statuses",
+      "type": "Type",
+      "all_types": "All Types"
+    },
+    "search": {
+      "placeholder": "Search integrations..."
+    },
+    "table": {
+      "name": "Name",
+      "type": "Type",
+      "service": "Service",
+      "connector": "Connector",
+      "status": "Status",
+      "last_sync": "Last Sync",
+      "actions": "Actions"
+    },
+    "empty_state": {
+      "title": "No Integrations Found",
+      "description": "You haven't added any integrations to this workspace yet. Add your first integration to start connecting to external services.",
+      "add_integration": "Add Integration"
+    }
+  },
+  "integration_types": {
+    "data_storage": {
+      "name": "Data Storage",
+      "description": "External data storage and BI tool integrations"
+    },
+    "mcp_server": {
+      "name": "MCP Servers",
+      "description": "Connected MCP servers for tool access"
+    },
+    "api_gateway": {
+      "name": "API Gateways",
+      "description": "External API gateways and endpoints"
+    },
+    "oauth_provider": {
+      "name": "OAuth Providers",
+      "description": "OAuth/SSO integration connections"
+    },
+    "monitoring": {
+      "name": "Monitoring",
+      "description": "External monitoring and alerting services"
+    }
+  },
+  "integration_dialog": {
+    "title": "Add New Integration",
+    "description": "Connect an external service or MCP server to your workspace.",
+    "integration_type": "Integration Type",
+    "name": "Integration Name",
+    "connector_type": "Connector Type",
+    "external_service": "External Service",
+    "connection_url": "Connection URL",
+    "create": "Create",
+    "cancel": "Cancel"
+  },
+  "user_profile": {
+    "title": "User Profile",
+    "language_settings": "Language Settings",
+    "preferred_language": "Preferred Language",
+    "save_changes": "Save Changes",
+    "language_saved": "Language preference saved successfully"
+  }
+}

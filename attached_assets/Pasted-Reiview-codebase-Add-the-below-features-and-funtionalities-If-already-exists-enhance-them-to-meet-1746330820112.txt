@@ -1,0 +1,63 @@
+Reiview codebase, Add the below features and funtionalities. If already exists, enhance them to meet enetrpise grade and integrate them with application to work seamless:
+ 
+review codebase and update to Build a secure, production-grade **User Administration Module** to meet  an enterprise application with support for **local users** and **directory-synced users** (via LDAP/Active Directory) nd integrate them with application to work seamless.
+
+🔹 Key Functional Areas:
+
+### 1. **User List View (Unified)**
+* Display both local and directory users in a single view
+* Columns: Full Name, Email, Source (Local / Directory), Team(s), Role(s), Status, Last Login
+* Filters: Source, Status, Role, Team
+* Search: by name, email, or team
+
+### 2. **Add/Edit Local User**
+* Fields: Name, Email, Phone, Department, Teams, Role(s), Status
+* Set temporary password with password policy enforcement
+* Toggle: Enforce password reset on first login
+* Enable MFA setup
+
+### 3. **Directory Sync Functionality**
+* Button: “Sync from Directory Service”
+* Modal with:
+
+  * Tab 1: **Search Directory Users**
+    * Search users by name, email, or username
+    * Select multiple users to sync
+    * Assign default role/team during sync
+  
+  * Tab 2: **Search Directory Groups/Teams**
+    * Search and list directory groups/teams
+    * Select a group to sync all members
+    * Option: auto-sync future group updates
+    * Assign group-wide default role(s) and team(s)
+* Synced users should be marked as read-only except for roles and local tags
+
+### 4. **Role & Permission Mapping**
+* Allow assigning multiple roles per user (Admin, Viewer, Editor, Custom)
+* Define permissions per role at module/feature level
+* Support team-based access inheritance
+* Audit trail for all role/permission changes
+
+### 5. **User Lifecycle Management**
+* Activate, deactivate, delete (soft delete)
+* Track user provisioning source (manual, directory)
+* Audit logs: changes, logins, sync history
+
+### 6. **Security & Compliance**
+* All API calls must be authenticated and authorized
+* Audit logs for admin/user actions
+* XSS, CSRF, and injection protection
+* Full TLS communication for directory APIs
+* Support for OpenID, SAML, LDAP for enterprise SSO
+
+### 7. **UI/UX Requirements**
+* Responsive design
+* Intuitive workflows for user creation, syncing, editing
+* Visual indicators for source, sync status, and permission overrides
+
+### 8. ** Enhancements**
+* Scheduled syncs with retry mechanism
+* Bulk import/export via CSV or Excel
+* Impersonation for admins
+* Multi-org (multi-tenant) support
+* Alerts for failed syncs, mismatched users, or conflicts

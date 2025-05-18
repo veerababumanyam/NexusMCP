@@ -1,0 +1,110 @@
+remove /directory-integration Directory Integration page and update sidebar route.
+
+Update sidebar integtration hub section with the below components. Integrate the exisitng ones, if not available create the function components in the application to work like an enterpise grade application and production ready. follow all best practices, ISO standards, recomondations along with zero trus, layerd, event driven architectures
+
+# Integration Hub : Enterprise Integration Capabilities
+
+## 1. Identity & Access Management (IAM)
+
+Ensuring secure and centralized user authentication and authorization.
+*   **Directory Services Integration:**
+    *   **Protocol:** LDAP v3 (Lightweight Directory Access Protocol)
+    *   **Supported Directories (Examples):** Microsoft Active Directory (Primary), other standard LDAP v3 compliant directories (e.g., OpenLDAP).
+    *   **Purpose:** Provides connectivity for direct authentication or group synchronization with traditional directory services
+*   **Standardized Single Sign-On (SSO):**
+    *   **Protocols:** SAML 2.0, OpenID Connect (OIDC) / OAuth 2.0
+    *   **Supported Providers (Examples):** Compatibility with any standard-compliant Identity Provider (IdP), including major platforms like Azure Active Directory (Azure AD), Okta, Ping Identity, Google Workspace, OneLogin, Active Directory Federation Services (ADFS), Shibboleth, and others.
+    *   **Purpose:** Enables users to authenticate using their existing corporate credentials via their organization's chosen IdP, enhancing security and user experience.
+*   **Automated User Provisioning:**
+    *   **Protocol:** SCIM 2.0 (System for Cross-domain Identity Management)
+    *   **Purpose:** Automates the lifecycle management (creation, updates, deactivation) of user accounts and group memberships within our application, synchronized with the central enterprise IdP. This reduces administrative burden and improves security posture.
+
+## 2. Support & IT Service Management (ITSM)
+
+Streamlining support workflows by connecting with enterprise ticketing systems.
+
+*   **Ticketing System Integration:**
+    *   **Supported Platforms (Examples):** ServiceNow, Jira Service Management, Zendesk, Salesforce Service Cloud, Freshdesk
+    *   **Methods:** API-based integration to create, update, or retrieve support tickets based on application events or user actions.
+
+## 3. Communication & Notification
+
+Integrating with enterprise communication channels for system alerts and user notifications.
+
+*   **Email Delivery:**
+    *   **Integration:** Ability to configure and use enterprise SMTP relays.
+    *   **Providers (Examples):** SendGrid, Postfix, Microsoft 365/Exchange Online SMTP relay services.
+    *   **Purpose:** Ensures emails sent by the application originate from the organization's trusted infrastructure.
+*   **Messaging Platforms:**
+    *   **Supported Platforms (Examples):** Slack, Microsoft Teams
+    *   **Methods:** Webhook-based notifications for key application events.
+*   **SMS Notifications:**
+    *   **Integration:** Ability to connect with SMS Gateway providers.
+    *   **Providers (Examples):** Twilio, Vonage, Plivo.
+
+## 4. API, WAF 
+*   **AR-1: API Gateway Integration:** The system MUST leverage an enterprise-grade API Gateway as the primary ingress point. The API Gateway is responsible for initial request reception, TLS termination (or passthrough for mTLS), basic validation, rate limiting, potential initial authentication/authorization offloading, and routing to appropriate backend gateway processing units or services.
+*   **AR-2: Web Application Firewall (WAF):** All ingress traffic MUST pass through a WAF before reaching the API Gateway or any gateway components. The WAF must be configured with rulesets to protect against 
+
+## 5. Monitoring, Logging & Observability
+
+Providing visibility into application health, performance, and usage within the enterprise monitoring ecosystem.
+
+*   **Application Performance Monitoring (APM) & Infrastructure Monitoring:**
+    *   **Supported Tools (Examples):** Datadog, Dynatrace, New Relic, Grafana, Prometheus
+    *   **Methods:** Exporting key performance indicators (KPIs) and health metrics via standardized endpoints (e.g., Prometheus exposition format), Health check APIs (e.g., `/health` endpoints compatible with standard monitoring probes).
+*   **Log Aggregation:**
+    *   **Supported Systems (Examples):** Splunk, ELK Stack (Elasticsearch, Logstash, Kibana), Graylog, Datadog Logs, Azure Monitor Log Analytics, Google Cloud Logging
+    *   **Methods:** Forwarding application logs in standardized formats (e.g., JSON, Syslog, CEF, LEEF) to centralized logging platforms.
+
+
+## 6. Data Storage, Analytics & Business Intelligence (BI)
+
+Facilitating data exchange for reporting, analytics, and centralized data warehousing.
+
+*   **Data Lake / Warehouse Integration:**
+    *   **Supported Platforms (Examples):** AWS S3, Azure Data Lake Storage (ADLS), Google Cloud Storage (GCS), Snowflake, Google BigQuery, Amazon Redshift
+    *   **Methods:** Secure API endpoints for data push/pull, Scheduled data exports (configurable formats: CSV, JSON, Parquet), Dedicated connectors where available.
+*   **Business Intelligence (BI) Tool Connectivity:**
+    *   **Supported Tools (Examples):** Tableau, Power BI, Looker, Qlik
+    *   **Methods:** Direct platform connectors (if available), Standardized API endpoints (REST/GraphQL) for data querying, Compatibility via data export to warehouses/lakes.
+*   **ETL/ELT Tool Compatibility:**
+    *   **Supported Tools (Examples):** Fivetran, Informatica, Talend, Stitch, MuleSoft, Dell Boomi
+    *   **Methods:** Webhook notifications for data events, API compatibility, Standardized data export formats.
+	
+## 7. Workflow Automation & Integration Platforms (iPaaS)
+
+Enabling custom workflows and connecting with broader enterprise automation strategies.
+
+*   **APIs:**
+    *   **Type:** Comprehensive RESTful and/or GraphQL APIs covering application functionality.
+    *   **Purpose:** Allows custom development and integration with any system capable of making API calls.
+*   **Webhooks:**
+    *   **Type:** Outbound event-driven notifications.
+    *   **Purpose:** Pushes real-time updates to subscribed external systems upon specific application events.
+*   **Integration Platforms (iPaaS):**
+    *   **Supported Platforms (Examples):** Zapier, Workato, MuleSoft, Dell Boomi, Microsoft Power Automate
+    *   **Methods:** Providing compatibility via robust APIs and webhooks, potentially offering pre-built connectors/recipes.
+
+## 8. Security Tooling
+
+Integrating with enterprise security infrastructure for enhanced monitoring, auditing, and compliance.
+
+*   **Security Information and Event Management (SIEM):**
+    *   **Supported Systems (Examples):** Splunk Enterprise Security, IBM QRadar, Azure Sentinel, ArcSight
+    *   **Methods:** Forwarding security-relevant logs (e.g., authentication events, permission changes, critical actions) in standard formats (CEF, LEEF).
+*   **Secrets Management:**
+    *   **Supported Systems (Examples):** HashiCorp Vault, AWS Secrets Manager, Azure Key Vault, Google Secret Manager, CyberArk
+    *   **Methods:** Integration to securely store and retrieve API keys, credentials, and other secrets required for integrations.
+*   **Cloud Access Security Broker (CASB) (Advanced):**
+    *   **Supported Systems (Examples):** Netskope, Microsoft Defender for Cloud Apps, Palo Alto Prisma SaaS
+    *   **Methods:** Potential API integrations for policy enforcement and detailed activity monitoring (depending on SaaS architecture).
+
+## 9. Enterprise File Storage & Collaboration
+
+Connecting with corporate file storage solutions for data import/export and collaboration.
+
+*   **File Storage Integration:**
+    *   **Supported Platforms (Examples):** SharePoint (Microsoft 365), Box, Dropbox Business, Google Drive (Google Workspace), OneDrive for Business
+    *   **Methods:** APIs for secure file upload, download, listing, and management within the context of the application workflow.
+

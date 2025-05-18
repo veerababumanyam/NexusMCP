@@ -1,0 +1,48 @@
+Design and implement a comprehensive notification and alerting system with SMTP configuration support for an enterprise-grade SaaS application.
+
+### ✅ Enhanced Requirements: SMTP & Notification System
+
+**1. SMTP Configuration Module**
+* UI/CLI for configuring SMTP (host, port, credentials, TLS/SSL)
+* Support for popular email services (Gmail, Outlook, custom SMTP)
+* Environment-specific SMTP configs (Dev, Staging, Prod)
+* Connection test & verification feature
+* Secrets encryption for SMTP credentials (e.g., Vault, KMS)
+
+**2. Notification Management**
+* Channels: Email, Webhooks, Slack/MS Teams, In-app, SMS (optional via plugin)
+* Templates: Customizable HTML/email templates with variables and branding
+* Notification Throttling: Limit alert frequency per user/group
+* Prioritization: Critical, Warning, Info classification
+* Retry Mechanism: Configurable retries for failed sends with exponential backoff
+* Audit Logging: Log every notification sent with delivery status
+
+**3. Alerts & Trigger Configuration**
+* Event-based alerts (e.g., user login failure, policy violation, system crash)
+* Threshold-based triggers (e.g., CPU > 90% for 5 minutes)
+* Support for custom rule definitions (e.g., JSON logic or expressions)
+* Workspace-scoped alert configs with RBAC
+* Quiet hours / Do Not Disturb configuration
+
+**4. Notification Delivery & UI**
+* In-app notification center with real-time updates (WebSockets)
+* Read/unread tracking, filters, and mark-all-as-read
+* Email digests and summaries (daily/weekly)
+* Alert history view with severity filtering
+
+**5. Extensibility**
+* Plugin-based architecture for adding new notification channels
+* REST and WebSocket APIs for pushing external alerts
+* Multi-language support and i18n for templates
+
+---
+
+> Core Requirements:
+> * **SMTP Integration:** Provide UI, API, and CLI support for setting up, testing, and securely storing SMTP configurations per environment.
+> * **Multi-Channel Notifications:** Implement email, Slack, webhook, and in-app channels using a plugin-friendly architecture.
+> * **Alerting Framework:** Create an event and threshold-based alert trigger system with customizable rules and templates.
+> * **Notification Center UI:** Build a real-time in-app notification center with filters, priority sorting, and read status.
+> * **Template Engine:** Develop a templating system for emails and messages with branding and i18n support.
+> * **Resilience:** Include retry mechanisms, exponential backoff, logging, and monitoring for failures.
+> * **RBAC & Workspace Isolation:** Ensure all alerts are scoped to the user’s permissions and workspace.
+> * **Compliance & Security:** Encrypt SMTP secrets, log all alerts, and provide auditability for all sends and events.

@@ -1,0 +1,53 @@
+sequenceDiagram
+    participant Client as Browser / MCP Client (User)
+    participant MCPGW as NexusMCP Gateway
+    participant OAuth as OAuth2 / SSO / MFA Provider
+    participant AuthZ as Auth Service (Token Validator)
+    participant Policy as RBAC / ABAC Policy Engine
+    participant Core as NexusMCP Core
+    participant Servers as MCP Servers (Tool Providers)
+    participant Audit as Audit Logger
+
+    Client->>OAuth: OAuth Login Flow (Authorization Code Grant)
+    OAuth-->>Client: Redirect with Auth Code
+    Client->>MCPGW: Exchange Auth Code for Access Token
+    MCPGW->>OAuth: Validate Code and Fetch Token
+    OAuth-->>MCPGW: Access Token + Identity Claims
+
+    MCPGW->>AuthZ: Verify Token & Extract User Context
+    AuthZ-->>MCPGW: Success (User, Roles, Attributes)
+
+    Client->>MCPGW: Request Tool List (With Token)
+    MCPGW->>Policy: Evaluate Access (RBAC/ABAC)
+    Policy-->>MCPGW: Access Granted (Filtered Tools/Capabilities)
+
+    MCPGW->>Core: Request Tool Metadata
+    Core->>Servers: Broadcast list_tools
+    Servers-->>Core: Tool Definitions (With Capabilities, Policies)
+    Core->>MCPGW: Aggregated Tool List (Filtered by Permissions)
+    MCPGW->>Audit: Log list_tools Request
+    MCPGW->>Client: Return Tools List UI
+
+    Client->>MCPGW: Execute Tool (ToolID, Params, Token)
+    MCPGW->>AuthZ: Re-validate Token
+    AuthZ-->>MCPGW: Valid
+
+    MCPGW->>Policy: Enforce call_tool (RBAC/ABAC)
+    Policy-->>MCPGW: Access Permitted
+
+    MCPGW->>Core: Route to Tool Server
+    Core->>Servers: call_tool (Tool ID, Inputs)
+    Servers-->>Core: Tool Output
+    Core->>MCPGW: Return Output
+    MCPGW->>Audit: Log Tool Invocation
+    MCPGW->>Client: Return Tool Output
+
+fix all Misalignments Identified to match the above flow:
+Resource Concept Mismatch: The workspace resources implementation appears to focus on general "resources" rather than specifically integration configurations with external services
+Gateway Flow: Some components may be treating NexusMCP as a management platform rather than primarily a gateway/proxy
+Integration Configuration: While integration configuration exists, the connection between workspaces and available integrations needs strengthening
+
+Recommended Actions
+Enhance the proxy flow to better match the sequence diagram
+Ensure policy enforcement specifically evaluates access to integration configurations
+Refocus workspace resources to clearly represent available integrations/connections

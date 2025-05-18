@@ -1,0 +1,43 @@
+i18next::translator: missingKey en translation workspace_integrations.description workspace_integrations.description
+i18next::translator: missingKey en translation workspace_integrations.new_integration workspace_integrations.new_integration
+i18next::translator: missingKey en translation workspace_integrations.tabs.resources Resources
+i18next::translator: missingKey en translation workspace_integrations.tabs.metrics Metrics
+i18next::translator: missingKey en translation workspace_integrations.tabs.quotas Quotas
+i18next::translator: missingKey en translation workspace_integrations.filters.resource_type workspace_integrations.filters.resource_type
+i18next::translator: missingKey en translation workspace_integrations.filters.all_types workspace_integrations.filters.all_types
+i18next::translator: missingKey en translation workspace_integrations.filters.status workspace_integrations.filters.status
+i18next::translator: missingKey en translation workspace_integrations.filters.all_statuses workspace_integrations.filters.all_statuses
+i18next::translator: missingKey en translation workspace_integrations.status.active workspace_integrations.status.active
+i18next::translator: missingKey en translation workspace_integrations.status.provisioning workspace_integrations.status.provisioning
+i18next::translator: missingKey en translation workspace_integrations.status.degraded workspace_integrations.status.degraded
+i18next::translator: missingKey en translation workspace_integrations.status.error workspace_integrations.status.error
+i18next::translator: missingKey en translation workspace_integrations.status.paused workspace_integrations.status.paused
+i18next::translator: missingKey en translation workspace_integrations.actions.refresh workspace_integrations.actions.refresh
+i18next::translator: missingKey en translation workspace_integrations.search.placeholder workspace_integrations.search.placeholder
+demoMetrics is not defined
+The above error occurred in the <WorkspaceResourcesPage> component:
+
+    at WorkspaceResourcesPage (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/src/pages/workspace-resources-page.tsx:281:17)
+    at Route (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=105f35c8:280:16)
+    at ProtectedRoute (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/src/lib/protected-route.tsx:22:3)
+    at Switch (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=105f35c8:336:17)
+    at AppRoutes
+    at div
+    at main
+    at div
+    at div
+    at AppLayout (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/src/components/layout/app-layout.tsx:25:29)
+    at SidebarProvider (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/src/lib/sidebar-context.tsx:26:35)
+    at AuthProvider (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/src/hooks/use-auth.tsx:26:32)
+    at ThemeProvider (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/src/lib/theme-provider.tsx:28:3)
+    at I18nProvider (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/src/lib/i18n-provider.tsx:22:32)
+    at Suspense
+    at QueryClientProvider (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=105f35c8:2869:3)
+    at App
+    at AuthProvider (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/src/hooks/use-auth.tsx?v=HMv4FDxwsn5fVRFcTpP91:26:32)
+    at ThemeProvider (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/src/lib/theme-provider.tsx?v=HMv4FDxwsn5fVRFcTpP91:28:3)
+    at QueryClientProvider (https://660080cc-82d3-4e86-ac78-0e1cb5cad7a8-00-1o05d7gmw2oo9.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=105f35c8:2869:3)
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+demoMetrics is not defined

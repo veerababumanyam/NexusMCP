@@ -1,0 +1,39 @@
+Design and implement a robust **Workspace Management System** tightly integrated with **Role-Based Access Control (RBAC)** to enable secure, isolated environments for teams or user groups within the MCP platform. Each workspace should enforce configurable access policies akin to Windows group policies.
+
+**Core Functionalities (WorkspaceService):**
+* Provide full CRUD operations for workspaces via secure REST APIs.
+* Enforce fine-grained access through a policy engine and RBAC roles (Admin, Developer, Viewer, etc.).
+* Support context switching between workspaces without data leakage or privilege escalation.
+* Implement comprehensive **audit logging** for all workspace-related activities.
+* Ensure strict **tool, server, and data isolation** per workspace using a scalable context boundary layer.
+* Align implementation with **zero-trust security principles** — never trust by default, always verify.
+
+**Isolation Levels:**
+Support configurable workspace isolation levels:
+* **Standard**: Shared infra with basic logical isolation.
+* **High**: Separate storage and compute nodes for improved security.
+* **Maximum**: Fully isolated environments with dedicated infrastructure and network layer segmentation.
+
+**Security Features:**
+* **RBAC within workspaces**: Allow role-specific access to certain features (e.g., only DevOps can restart MCP servers).
+* **Zero-Trust Model**: Enforce identity-based access with strong authentication.
+* **MFA per Workspace**: Optional enforcement of MFA (e.g., TOTP, WebAuthn) on a per-workspace basis.
+* **Data Encryption**: Enable optional encryption-at-rest for workspace-specific data.
+* **Policy Enforcement**: Dynamic and version-controlled policies defining user privileges, accessible tools, and allowed operations.
+
+**Frontend (Admin Console):**
+* Build intuitive UI components (React-based) for:
+  * Workspace creation/editing
+  * User-group and RBAC configuration
+  * Isolation level selection
+  * Audit trail visualization and policy assignment
+
+**API & Integration:**
+* Expose all operations as **RESTful APIs**, secured via token-based or OAuth2 authentication.
+* Include OpenAPI/Swagger documentation for extensibility.
+* Design for **plugin compatibility**, allowing workspace-scoped plugin execution and visibility.
+
+**Additional Requirements:**
+* Allow future integration with directory services (e.g., LDAP, Azure AD).
+* Ensure scalability across thousands of workspaces.
+* Comply with GDPR, ISO 27001, and SOC 2 standards.
